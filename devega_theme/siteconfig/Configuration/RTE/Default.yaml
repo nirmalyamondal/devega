@@ -1,0 +1,53 @@
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+# Load default processing options
+imports:	
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+    - { resource: "EXT:rte_ckeditor_image/Configuration/RTE/Plugin.yaml" }
+editor:
+  config:
+    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:siteconfig/Resources/Public/Css/RTE.css"]
+    stylesSet:
+      # block level styles
+      - { name: "Blue Button Link", element: ['a'], attributes: { 'class': 'blue-button-link' }}
+      - { name: "Detail Link", element: ['a'], attributes: { 'class': 'detail' }}
+      - { name: "Stil", element: ['a'], attributes: { 'class': 'stil-link' }}
+
+      # List styles
+      - { name: 'UL Style Disc', element: 'ul', attributes: { 'class': 'ul-style-disc' } }
+      
+    toolbarGroups:
+      - { name: clipboard, groups: [clipboard, undo] }
+      - { name: editing,   groups: [find, selection, spellchecker] }
+      - { name: links }
+      - { name: insert }
+      - { name: tools }
+      - { name: table }
+      - { name: tabletools }
+      - { name: document,  groups: [ mode, document, doctools ] }
+      - { name: others }
+      - "/"
+      - { name: basicstyles, groups: [ basicstyles, align, cleanup ] }
+      - { name: paragraph,   groups: [ list, indent, blocks, align, bidi ] }
+      - "/"
+      - { name: styles }
+      
+    justifyClasses:
+      - text-left
+      - text-center
+      - text-right
+      - text-justify
+
+    extraPlugins:
+      - justify
+    removePlugins: null
+
+    removeButtons: null
+
+# Allow s and u tag
+processing:
+  allowTags:
+    - s
+    - u      

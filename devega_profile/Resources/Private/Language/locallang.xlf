@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:devega_profile/Resources/Private/Language/locallang.xlf" date="2022-05-17T15:01:28Z" product-name="devega_profile">
+		<header/>
+		<body>
+			<trans-unit id="tx_devegaprofile_domain_model_profile" resname="tx_devegaprofile_domain_model_profile">
+				<source>Profile</source>
+			</trans-unit>
+			<trans-unit id="tx_devegaprofile_domain_model_profile.name" resname="tx_devegaprofile_domain_model_profile.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_devegaprofile_domain_model_profile.image" resname="tx_devegaprofile_domain_model_profile.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_devegaprofile_domain_model_profile.abteilung" resname="tx_devegaprofile_domain_model_profile.abteilung">
+				<source>Abteilung</source>
+			</trans-unit>
+			<trans-unit id="tx_devegaprofile_domain_model_profile.zusatz" resname="tx_devegaprofile_domain_model_profile.zusatz">
+				<source>Zusatz</source>
+			</trans-unit>
+			<trans-unit id="tx_devegaprofile_domain_model_profile.telefon" resname="tx_devegaprofile_domain_model_profile.telefon">
+				<source>Telefon</source>
+			</trans-unit>
+			<trans-unit id="tx_devegaprofile_domain_model_profile.handy" resname="tx_devegaprofile_domain_model_profile.handy">
+				<source>Handy</source>
+			</trans-unit>
+			<trans-unit id="tx_devegaprofile_domain_model_profile.email" resname="tx_devegaprofile_domain_model_profile.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_devegaprofile_domain_model_profile.linktext" resname="tx_devegaprofile_domain_model_profile.linktext">
+				<source>Linktext</source>
+			</trans-unit>
+			<trans-unit id="tx_devegaprofile_domain_model_profile.link" resname="tx_devegaprofile_domain_model_profile.link">
+				<source>Link</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

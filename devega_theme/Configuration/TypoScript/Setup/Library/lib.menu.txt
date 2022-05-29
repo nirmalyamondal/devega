@@ -1,0 +1,285 @@
+lib.mainMenu = HMENU
+lib.mainMenu {
+#excludeUidList = 2,143
+special = list
+special.value = 133,135
+  1 = TMENU
+  1 {
+    wrap = |
+    expAll = 1
+    NO.wrapItemAndSub = <li>|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+  NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }
+  2 < .1
+  2 {
+    wrap = <ul>|</ul> 
+    expAll = 1
+    NO.wrapItemAndSub = <li>|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+    NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }
+}
+
+lib.mainMenu2 = HMENU
+lib.mainMenu2 {
+#excludeUidList = 2,143
+special = list
+special.value = 133,135
+  1 = TMENU
+  1 {
+    wrap =|
+    expAll = 1
+    NO.wrapItemAndSub = <li>|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+  NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }
+  2 < .1
+  2 {
+    wrap = <ul>|</ul> 
+    expAll = 1
+    NO.wrapItemAndSub = <li>|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+    NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }
+}
+
+lib.mobileMenu = HMENU
+lib.mobileMenu {
+#excludeUidList = 2,143
+special = list
+special.value = 133,135,3
+  1 = TMENU
+  1 {
+    wrap = <ul>|</ul> 
+    expAll = 1
+    NO.wrapItemAndSub = <li>|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+  NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }
+  2 < .1
+  2 {
+    wrap = <ul>|</ul> 
+    expAll = 1
+    NO.wrapItemAndSub = <li>|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+    NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }
+}
+
+lib.footerNav = HMENU
+lib.footerNav {
+special = list
+special.value = 3,4,5,6
+  1 = TMENU
+  1 {
+    wrap = <ul class="footer-nav">|</ul> 
+    expAll = 1
+    NO.wrapItemAndSub = <li>|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+  NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }
+  2 < .1
+  2 {
+    wrap = <ul>|</ul> 
+    expAll = 1
+    NO.wrapItemAndSub = <li>|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+    NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }
+}
+
+lib.metaNav = HMENU
+lib.metaNav {
+special = directory
+special.value = 7
+  1 = TMENU
+  1 {
+    wrap = <ul class="meta-nav">|</ul> 
+    expAll = 1
+    NO.wrapItemAndSub = <li>|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+  NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }
+}
+
+lib.socialNav = HMENU
+lib.socialNav {
+special = directory
+special.value = 36
+  1 = TMENU
+  1 {
+    wrap = <ul class="social-nav">|</ul> 
+    expAll = 1
+    NO.wrapItemAndSub = <li class="facebook">|</li>  || <li class="twitter">|</li>  || <li class="xing">|</li> || <li class="insta">|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+  NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }
+}
+
+lib.ansprechPartner = HMENU
+lib.ansprechPartner {
+special = list
+special.value = 30
+  1 = TMENU
+  1 {
+    wrap = | 
+    expAll = 1
+    NO.wrapItemAndSub = |
+    NO.stdWrap.htmlSpecialChars = 1
+  NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }
+}
+
+lib.rootline = HMENU
+lib.rootline {
+    special = rootline
+  special.range = 1|-1
+ 
+    wrap = <div class="rootline">|</div>
+ 
+    1 = TMENU
+    1.target = _top
+    1.NO {
+        stdWrap.htmlSpecialChars = 1
+ 
+        # Layout 1: Seite 1 | Seite 2 | Seite 3
+        linkWrap = |<span class="line">&nbsp;&#124;&nbsp;</span>|*||*| |
+ 
+ 
+        doNotLinkIt = |*| 0 |*| 1
+    }
+}
+
+lib.mainMenuUnternehmen = HMENU
+lib.mainMenuUnternehmen {
+  special = list
+  special.value = 3
+  1 = TMENU
+  1 {
+    wrap = |
+    expAll = 1
+    NO.wrapItemAndSub = <li>|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+  NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }
+  2 < .1
+  2 {
+    wrap = <ul>|<li class="kontaktTelIcon"><a href="javascript:void(0);" class="template-kontakt-help-anchor-open"><img src="fileadmin/devega/Resources/Public/Images/bluePhoneIcon.jpg" width="50px" height="50px" title="Kontakt" /></a></li></ul> 
+    expAll = 1
+    NO.wrapItemAndSub = <li>|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+    NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }
+}
+
+lib.footerNavMappenwelt = HMENU
+lib.footerNavMappenwelt {
+#excludeUidList = 2,143
+special = list
+special.value = 135
+  1 = TMENU
+  1 {
+    wrap = <ul class="footer-nav">|</ul> 
+    expAll = 1
+    NO.wrapItemAndSub = <li>|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+  NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }
+  2 < .1
+  2 {
+    wrap = <ul>|</ul> 
+    expAll = 1
+    NO.wrapItemAndSub = <li>|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+    NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }
+}
+
+lib.footerMenu1 = HMENU
+lib.footerMenu1 {
+  special = directory
+  special.value = {$Spalte1PageId}
+  1 = TMENU
+  1 {
+    wrap = <ul class="meta-nav firstMetaNav">|</ul> 
+    expAll = 1
+    NO.wrapItemAndSub = <li>|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+  NO.ATagTitle.field = title
+    ACT < .NO
+    ACT = 1
+    ACT.stdWrap.htmlSpecialChars = 1
+    ACT.ATagParams = class="active"
+  }  
+}
+
+lib.footerMenu2 < lib.footerMenu1
+lib.footerMenu2.special.value = {$Spalte2PageId}
+lib.footerMenu2.1.wrap = <ul class="meta-nav secondMetaNav">|</ul> 
+
+lib.footerMenu3 < lib.footerMenu1
+lib.footerMenu3.special.value = {$Spalte3PageId}
+lib.footerMenu3.1.wrap = <ul class="meta-nav thirdMetaNav">|</ul>
+
+lib.mainMenuUnternehmen.2.wrap = <ul>|</ul>

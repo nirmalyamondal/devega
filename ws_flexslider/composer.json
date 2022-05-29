@@ -1,0 +1,34 @@
+{
+	"name": "svewap/ws-flexslider",
+	"type": "typo3-cms-extension",
+	"description": "jQuery Flexslider slideshow script",
+	"license": "GPL-2.0+",
+	"preferred-install": "dist",
+    "prefer-stable": true,
+    "version": "11.5.0",
+	"keywords": [
+		"typo3",
+		"TYPO3 CMS",
+		"Flexslider"
+	],
+	"authors": [
+		{
+			"name": "Sven Wappler",
+			"email": "typo3YYYY@wappler.systems"
+		}
+	],
+	"require": {
+		"typo3/cms-core": "11.5.10"
+	},
+	"autoload": {
+		"psr-4": {
+			"WapplerSystems\\WsFlexslider\\": "Classes/"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"extension-key": "ws_flexslider"
+		}
+	}
+}

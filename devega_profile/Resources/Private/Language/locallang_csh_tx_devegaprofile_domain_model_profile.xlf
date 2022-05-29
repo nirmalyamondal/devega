@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:devega_profile/Resources/Private/Language/locallang_csh_tx_devegaprofile_domain_model_profile.xlf" date="2022-05-17T15:01:28Z" product-name="devega_profile">
+		<header/>
+		<body>
+			<trans-unit id="name.description" resname="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="image.description" resname="image.description">
+				<source>image</source>
+			</trans-unit>
+			<trans-unit id="abteilung.description" resname="abteilung.description">
+				<source>abteilung</source>
+			</trans-unit>
+			<trans-unit id="zusatz.description" resname="zusatz.description">
+				<source>zusatz</source>
+			</trans-unit>
+			<trans-unit id="telefon.description" resname="telefon.description">
+				<source>telefon</source>
+			</trans-unit>
+			<trans-unit id="handy.description" resname="handy.description">
+				<source>handy</source>
+			</trans-unit>
+			<trans-unit id="email.description" resname="email.description">
+				<source>email</source>
+			</trans-unit>
+			<trans-unit id="linktext.description" resname="linktext.description">
+				<source>linktext</source>
+			</trans-unit>
+			<trans-unit id="link.description" resname="link.description">
+				<source>link</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

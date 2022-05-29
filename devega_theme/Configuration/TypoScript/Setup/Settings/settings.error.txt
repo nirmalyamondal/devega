@@ -1,0 +1,3 @@
+#config.contentObjectExceptionHandler = 1
+#config.contentObjectExceptionHandler.errorMessage = Oops an error occurred. Code: %s
+#config.contentObjectExceptionHandler.errorMessage = 

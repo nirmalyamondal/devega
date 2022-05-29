@@ -1,0 +1,6 @@
+lib.abstract = TEXT  
+lib.abstract {
+	value = {page:abstract//page:subtitle//page:title}
+    insertData = 1
+    wrap = |
+}

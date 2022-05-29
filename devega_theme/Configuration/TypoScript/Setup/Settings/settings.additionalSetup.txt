@@ -1,0 +1,1 @@
+lib.contentElement.settings.defaultHeaderType = {$content.defaultHeaderType}

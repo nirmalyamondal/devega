@@ -1,0 +1,43 @@
+#Configuration
+config {
+  xmlprologue = none
+  metaCharset = utf-8
+  renderCharset = utf-8
+  additionalHeaders = Content-Type:text/html;charset=utf-8
+  doctype = html5
+  #moveJsFromHeaderToFooter = 1
+  #compression and concatenation for JS and CSS
+  concatenateCss = {$concatenateCss}
+  compressCss = {$compressCss}
+  concatenateJs = {$concatenateJs}
+  compressJs = {$compressJs}
+  removeDefaultJS = {$removeDefaultJS}
+  removeDefaultCSS = {$removeDefaultCSS}
+  
+  disableBaseWrap = {$disableBaseWrap}
+  spamProtectEmailAddresses = 2
+  spamProtectEmailAddresses_atSubst = [AT]
+
+  no_cache = 0
+  sendCacheHeaders = 0
+  admPanel = 0
+  noPageTitle = 2
+  baseURL = {$siteBaseurl}
+  absRelPrefix = {$siteBaseurl}
+  typolinkLinkAccessRestrictedPages = 1
+  typolinkLinkAccessRestrictedPages_addParams = &redirect=1
+  disablePrefixComment = 1
+  headerComment (
+    ===============================
+      Site design and TYPO3 integration by www.ashokatree.net
+    ===============================
+  )  
+  meaningfulTempFilePrefix = 100
+  stat = 0
+  stat_apache = 0
+  linkVars = L(1-100),type(int),ADMCMD_previewWS(int),ADMCMD_view(int),ADMCMD_editIcons(int)
+  extTarget = _blank
+  fileTarget = _blank
+  inlineStyle2TempFile = 1
+  xhtml_cleaning = all
+}

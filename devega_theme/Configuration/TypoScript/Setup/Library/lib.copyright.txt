@@ -1,0 +1,14 @@
+lib.copyright = COA
+lib.copyright  {
+	10 = TEXT 
+	10 {
+		data = date : U
+    	strftime = %Y
+		wrap = |&nbsp;-&nbsp;
+	}
+	20 = TEXT 
+	20 {
+		data = {$lll}kundenName
+	}
+    wrap = <span class="copyright">&copy;|</span>
+}   

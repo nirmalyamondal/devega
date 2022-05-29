@@ -1,0 +1,58 @@
+[page["uid"] == 155]
+#Ihre Konfiguration ist abgeschlossen [155]
+plugin.tx_pimdevegaproduct_list {
+  settings  {
+    showformvalues = 1
+    #regeneratePdf = 0
+    useAspose= 1
+    redirectIfLogin = 1
+    redirectIfLoginPid = 187
+    redirectIfLoginSalesPid = 207
+  }
+}
+[END]
+
+[page["uid"] == 185]
+#Registrierung [185]
+plugin.tx_pimdevegaproduct_list.settings.showformvalues = 1
+[END]
+
+[page["uid"] == 187]
+#Bitte prüfen Sie Ihre Benutzerdaten [187]
+plugin.tx_pimdevegaproduct_list.settings{
+  regeneratePdf = 0
+  useAspose= 1
+}
+[END]
+
+[page["uid"] == 188]
+#Bestellung abschließen [188]
+plugin.tx_pimdevegaproduct_list.settings {
+  showformvalues = 0
+  sendPdfByEmail = 0
+  orderConfirmation = 1
+}
+[END]
+
+[page["uid"] == 189]
+#Danke für Ihre Anfrage! [189]
+plugin.tx_pimdevegaproduct_list.settings {
+  showformvalues = 0
+  sendPdfByEmail = 1
+  fromName = deVega Präsentationsmappen
+  toEmail = mappen@devega.de
+  toName = Devega Mappen konfigurator
+}
+[END]
+
+[page["uid"] == 207]
+#Bitte prüfen Sie Ihre Benutzerdaten Sales [207]
+plugin.tx_pimdevegaproduct_list.settings {
+  showformvalues = 1
+  regeneratePdf = 0
+  #Local
+  #useAspose= 0
+  #Online
+  useAspose= 1
+}
+[END]

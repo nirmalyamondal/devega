@@ -1,0 +1,41 @@
+[page["uid"] == 155]
+#Ihre Konfiguration ist abgeschlossen [155]
+#+Ext: Login
+plugin.tx_felogin_pi1 {
+	templateFile = fileadmin/devega/Resources/Private/Templates/ext/felogin/FrontendLogin.html
+	feloginBaseURL = {$constants.websiteURL}
+	redirectPageLogout = 155
+	forgotResetMessageEmailSentMessage_stdWrap.wrap = <div class="div-fgtPwdPost"><h2>Bitte überprüfen Sie Ihr Postfach</h2><p>|</p></div>
+	forgotMessage_stdWrap.wrap = <div><h2>Ihr Passwort wurde geändert</h2><p>Bitte melden Sie sich nun mit Ihrer E-Mail-Adresse und Ihrem neuen Passwort an. Sie können jetzt Ihre Konfiguration abschließen.</p>|</div>
+	email_from = konfigurator@devega.de
+	email_fromName = deVega Präsentationsmappen
+	replyTo = mappen@devega.de
+	_LOCAL_LANG {
+		de {
+			ll_forgot_reset_message =
+			ll_error_message_status = Das hat leider nicht funktioniert. Bitte geben Sie eine richtige E-Mail-Adresse und das richtige Passwort ein.
+			ll_forgot_reset_message_emailSent = Wir haben Ihnen einen Link zum Ändern Ihres  Passworts per E-Mail gesendet. Bitte klicken Sie auf den Link in der E-Mail und geben dann Ihr neues Passwort ein. Ihre Konfiguration können Sie danach fortsetzen.
+		}
+	}
+}
+[END]
+
+[page["uid"] == 185]
+#Registrierung [185]
+[END]
+
+[page["uid"] == 187]
+#Bitte prüfen Sie Ihre Benutzerdaten [187]
+[END]
+
+[page["uid"] == 188]
+#Bestellung abschließen [188]
+[END]
+
+[page["uid"] == 189]
+#Danke für Ihre Anfrage! [189]
+[END]
+
+[page["uid"] == 207]
+#Bitte prüfen Sie Ihre Benutzerdaten Sales [207]
+[END]

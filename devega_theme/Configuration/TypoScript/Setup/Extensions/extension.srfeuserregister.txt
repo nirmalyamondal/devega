@@ -1,0 +1,270 @@
+plugin {
+  tx_srfeuserregister_pi1 {
+    userGroupUponRegistration = 2
+    allowUserGroupUpdate = 0
+  }
+}
+
+[page["uid"] == 155]
+#Ihre Konfiguration ist abgeschlossen [155]
+plugin.tx_srfeuserregister_pi1.create.defaultValues.usergroup = 2
+plugin.tx_srfeuserregister_pi1.create.defaultValues.email = a@a.com
+[END]
+
+[page["uid"] == 185]
+#Registrierung [185]
+plugin.tx_srfeuserregister_pi1.pid = 154
+plugin.tx_srfeuserregister_pi1.loginPID = 155
+plugin.tx_srfeuserregister_pi1.editPID = 187
+plugin.tx_srfeuserregister_pi1.confirmPID = 186
+plugin.tx_srfeuserregister_pi1.create.useEmailAsUsername = 1
+#plugin.tx_srfeuserregister_pi1.create.overrideValues.usergroup = 2
+#plugin.tx_srfeuserregister_pi1.create.defaultValues.usergroup = 2
+plugin.tx_srfeuserregister_pi1.enableAutoLoginOnConfirmation = 0
+plugin.tx_srfeuserregister_pi1.create.fields = username, password, gender, first_name, last_name, address, city, static_info_country, zip, telephone,  company, comments, terms_acknowledged, module_sys_dmail_html, cnum
+plugin.tx_srfeuserregister_pi1.create.defaultValues.module_sys_dmail_html = 0
+plugin.tx_srfeuserregister_pi1.create.defaultValues.by_invitation = 0
+plugin.tx_srfeuserregister_pi1.templateFile = fileadmin/devega/Resources/Private/Templates/ext/sr_feuser_register/RegisterHtmlTemplate.html
+plugin.tx_srfeuserregister_pi1.create.required = username, first_name, last_name, address, city, static_info_country, zip, telephone, company, terms_acknowledged
+#konfigurator@devega.de
+plugin.tx_srfeuserregister_pi1.email.from = nirmalya.mondal@gmail.com
+plugin.tx_srfeuserregister_pi1.email.admin = nirmalya.mondal@gmail.com
+
+plugin.tx_srfeuserregister_pi1.email.from = konfigurator@devega.de
+plugin.tx_srfeuserregister_pi1.email.fromName = deVega Präsentationsmappen
+plugin.tx_srfeuserregister_pi1.email.replyToAdmin = mappen@devega.de
+plugin.tx_srfeuserregister_pi1.email.admin = mappen@devega.de
+plugin.tx_srfeuserregister_pi1.email.siteName = www.devega.com
+
+plugin.tx_srfeuserregister._LOCAL_LANG.de {
+first_name = Vorname
+last_name = Nachname
+telephone = Telefon
+company = Unternehmen/Organisation
+address = Straße und Hausnummer
+zip = PLZ
+city = Ort
+password = Passwort
+password_again = Passwort wiederholen
+evalErrors_email_email =
+button_register = Meine Angaben bestätigen
+button_update = Angebot mit Layoutkontur anfordern &nbsp;&nbsp;&nbsp;
+}
+
+plugin.tx_srfeuserregister_pi1.edit.fields = email, gender, first_name, last_name, address, city, static_info_country, zip, telephone, company, comments, terms_acknowledged
+plugin.tx_srfeuserregister_pi1.edit.required = email, first_name, last_name, address, city, static_info_country, zip, telephone, company, terms_acknowledged
+plugin.tx_srfeuserregister_pi1.edit.preview = 0
+plugin.tx_srfeuserregister_pi1.create.preview = 0
+##plugin.tx_srfeuserregister_pi1.edit.overrideValues.usergroup = 2
+##plugin.tx_srfeuserregister_pi1.edit.defaultValues.usergroup = 2
+plugin.tx_staticinfotables_pi1.languageCode = de
+#plugin.tx_staticinfotables_pi1.countryCode = cn_official_name_local
+plugin.tx_srfeuserregister_pi1.create.evalValues.password = twice, atLeast[0], atMost[40]
+plugin.tx_srfeuserregister_pi1.enableEmailConfirmation = 0
+plugin.tx_srfeuserregister_pi1.enableAutoLoginOnCreate = 1
+plugin.tx_srfeuserregister_pi1.create.overrideValues.disable = 0
+plugin.tx_srfeuserregister_pi1.useLocalCountry = 1
+
+page.includeJSFooter.file50 = fileadmin/devega/Resources/Public/JavaScript/registration.js
+plugin.tx_srfeuserregister._LOCAL_LANG.de.evalErrors_uniqueLocal_email = Für diese E-Mail-Adresse existiert bereits ein Konto. <a href="/mappenkonfigurator/?no_cache=1" >Jetzt anmelden</a> oder <a href="/ihre-konfiguration-ist-abgeschlossen/?tx_felogin_pi1%5Bforgot%5D=1">Passwort vergessen?</a>
+plugin.tx_srfeuserregister._LOCAL_LANG.de.evalErrors_uniqueLocal_email_informal = Für diese E-Mail-Adresse existiert bereits ein Konto. <a href="/mappenkonfigurator/?no_cache=1">Jetzt anmelden</a> oder <a href="/ihre-konfiguration-ist-abgeschlossen/?tx_felogin_pi1%5Bforgot%5D=1">Passwort vergessen?</a>   
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_first_name = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_last_name = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_telephone = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_email = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_company = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_address = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_zip = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_city = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_address = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_terms_acknowledged = Bitte füllen Sie dieses Feld aus..
+plugin.tx_srfeuserregister._LOCAL_LANG.de.evalErrors_email = Bitte geben Sie eine gültige E-Mail-Adresse an.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.evalErrors_email_informal = Bitte geben Sie eine gültige E-Mail-Adresse an.
+#plugin.tx_srfeuserregister_pi1.notify.EDIT_SAVED = 1
+plugin.tx_srfeuserregister_pi1.email.EDIT_SAVED = 0
+plugin.tx_srfeuserregister_pi1.email.CREATE_SAVED = 0
+plugin.tx_srfeuserregister_pi1.notify.CREATE_SAVED = 0
+plugin.tx_srfeuserregister_pi1.notify.EDIT_SAVED = 0
+
+
+#plugin.tx_srfeuserregister_pi1.userGroupsPidList = 154
+#plugin.tx_srfeuserregister_pi1.allowMultipleUserGroupSelection = 1
+#plugin.tx_srfeuserregister_pi1.create.allowedUserGroups = 1,2,3,4,5
+##plugin.tx_srfeuserregister_pi1.edit.allowedUserGroups = 1,2,3,4,5
+#plugin.tx_srfeuserregister_pi1.edit.overrideValues >
+#plugin.tx_srfeuserregister_pi1.edit.defaultValues >
+
+#plugin.tx_srfeuserregister_pi1.edit.allowUserGroupSelection = 0
+plugin.tx_srfeuserregister_pi1.edit.keepUnselectableUserGroups = 1
+page.footerData {
+  543 = TEXT
+  543.value (
+<script>
+    jQuery(function(){
+      //$('input.tx-srfeuserregister-pi1-submit').bind("click", function(event){
+      $('.feuser-registration input[name="tx_srfeuserregister_pi1[submit]"]').click(function(event) {
+        setredBorderIpFieldsRegistration(event);    
+      });
+    });
+</script>
+  )
+}
+
+plugin.tx_srfeuserregister_pi1.create.evalValues.company = atMost[100]
+plugin.tx_srfeuserregister_pi1.edit.evalValues.company = atMost[100]
+plugin.tx_srfeuserregister_pi1.invite.evalValues.company = atMost[100]
+
+plugin.tx_srfeuserregister_pi1.create.evalValues.address = atMost[100]
+plugin.tx_srfeuserregister_pi1.edit.evalValues.address = atMost[100]
+plugin.tx_srfeuserregister_pi1.invite.evalValues.address = atMost[100]
+
+plugin.tx_srfeuserregister_pi1.edit.evalValues.password = twice, atLeast[0], atMost[40],unsetEmpty
+plugin.tx_srfeuserregister_pi1.password.evalValues.password = twice, atLeast[0], atMost[40],unsetEmpty
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_password =
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_password_again =
+plugin.tx_srfeuserregister._LOCAL_LANG.de.evalErrors_atLeast_password =
+plugin.tx_srfeuserregister._LOCAL_LANG.de.evalErrors_atLeast_password_informal =  
+[END]
+
+[page["uid"] == 187]
+#Bitte prüfen Sie Ihre Benutzerdaten [187]
+plugin.tx_srfeuserregister_pi1.linkToPID = 189
+plugin.tx_srfeuserregister_pi1.notify.EDIT_SAVED = 0
+plugin.tx_srfeuserregister_pi1.notify.CREATE_SAVED = 0
+plugin.tx_srfeuserregister_pi1.email.CREATE_SAVED = 0
+
+
+plugin.tx_srfeuserregister._LOCAL_LANG.de {
+evalErrors_atLeast_password =
+evalErrors_atLeast_password_informal =
+evalErrors_atmost_characters =
+evalErrors_atmost_characters_informal =
+evalErrors_atMost =
+}
+#Showing Page Loadder on clicking on Profile Update
+page.footerData {
+  543 = TEXT
+  543.value (
+<link rel="stylesheet" type="text/css" href="fileadmin/devega/Resources/Public/Css/HoldOn.min.css" media="all">
+<script src="fileadmin/devega/Resources/Public/JavaScript/HoldOn.min.js"></script>
+<script>
+
+    jQuery(function(){
+      $('input.tx-srfeuserregister-pi1-submit').bind("click", function(event){
+        resetPasswordWhenBlank();
+        var isSuccessS = setredBorderIpFieldsRegistration(event);
+        setredBorderIpFieldsRegistration();
+        if(isSuccessS == undefined){
+          testHoldon('sk-circle');   
+        }
+        //return false;        
+      });
+      function testHoldon(themeName){
+        HoldOn.open({
+            theme:themeName,
+            message:"<h4 style='opacity:1;filter: alpha(opacity=100);'>Bitte warten Sie einen Moment</h4>"
+        });
+        
+        setTimeout(function(){
+            HoldOn.close();
+        },10000);
+    }
+    });
+</script>
+  )
+}
+[END]
+
+[page["uid"] == 188]
+#Bestellung abschließen [188]
+
+[END]
+
+[page["uid"] == 189]
+#Danke für Ihre Anfrage! [189]
+
+[END]
+
+[page["uid"] == 207]
+#Bitte prüfen Sie Ihre Benutzerdaten Sales [207]
+plugin.tx_srfeuserregister_pi1.email.EDIT_SAVED = 0
+plugin.tx_srfeuserregister_pi1.notify.EDIT_SAVED = 0
+plugin.tx_srfeuserregister_pi1.edit.keepUnselectableUserGroups = 1
+plugin.tx_srfeuserregister_pi1.linkToPID = 189
+plugin.tx_srfeuserregister_pi1.pid = 154
+plugin.tx_srfeuserregister_pi1.loginPID = 155
+plugin.tx_srfeuserregister_pi1.editPID = 207
+
+plugin.tx_staticinfotables_pi1.languageCode = de
+plugin.tx_srfeuserregister_pi1.enableEmailConfirmation = 0
+plugin.tx_srfeuserregister_pi1.useLocalCountry = 1
+
+plugin.tx_srfeuserregister_pi1.edit.fields   = gender, first_name, last_name, address, city, static_info_country, zip, telephone, company, cfname, clname, terms_acknowledged
+plugin.tx_srfeuserregister_pi1.edit.required = first_name, last_name, address, city, static_info_country, zip, telephone, company, cfname, clname, terms_acknowledged
+plugin.tx_srfeuserregister_pi1.edit.preview = 0
+
+plugin.tx_srfeuserregister_pi1.edit.evalValues.cfname = required
+plugin.tx_srfeuserregister_pi1.edit.evalValues.clname = required
+ 
+plugin.tx_srfeuserregister_pi1.templateFile = fileadmin/devega/Resources/Private/Templates/ext/sr_feuser_register/RegisterSalesTemplate.html
+
+plugin.tx_srfeuserregister._LOCAL_LANG.de {
+first_name = Vorname
+last_name = Nachname
+telephone = Telefon
+company = Unternehmen/Organisation
+address = Straße und Hausnummer
+zip = PLZ
+city = Ort
+password = Passwort
+password_again = Passwort wiederholen
+button_register = Meine Angaben bestätigen
+button_update = Angebot mit Layoutkontur anfordern &nbsp;&nbsp;&nbsp;
+cfname = Vorname
+clname = Nachname
+}
+
+
+plugin.tx_srfeuserregister._LOCAL_LANG.de.evalErrors_uniqueLocal_email = Für diese E-Mail-Adresse existiert bereits ein Konto. <a href="/mappenkonfigurator/?no_cache=1" >Jetzt anmelden</a> oder <a href="/ihre-konfiguration-ist-abgeschlossen/?tx_felogin_pi1%5Bforgot%5D=1">Passwort vergessen?</a>
+plugin.tx_srfeuserregister._LOCAL_LANG.de.evalErrors_uniqueLocal_email_informal = Für diese E-Mail-Adresse existiert bereits ein Konto. <a href="/mappenkonfigurator/?no_cache=1">Jetzt anmelden</a> oder <a href="/ihre-konfiguration-ist-abgeschlossen/?tx_felogin_pi1%5Bforgot%5D=1">Passwort vergessen?</a>   
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_first_name = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_last_name = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_telephone = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_email = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_company = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_address = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_zip = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_city = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_address = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.missing_terms_acknowledged = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.evalErrors_required_cfname = Bitte füllen Sie dieses Feld aus.
+plugin.tx_srfeuserregister._LOCAL_LANG.de.evalErrors_required_clname = Bitte füllen Sie dieses Feld aus.
+#Showing Page Loadder on clicking on Profile Update
+page.footerData {
+  543 = TEXT
+  543.value (
+<link rel="stylesheet" type="text/css" href="fileadmin/devega/Resources/Public/Css/HoldOn.min.css" media="all">
+<script src="fileadmin/devega/Resources/Public/JavaScript/HoldOn.min.js"></script>
+<script>
+    jQuery(function(){
+      $('input.tx-srfeuserregister-pi1-submit').bind("click", function(event){
+        resetPasswordWhenBlank();
+        var isSuccessS = setredBorderIpFieldsRegistration(event);
+        if(isSuccessS == undefined){
+          testHoldon('sk-circle');
+        }    
+      });
+      function testHoldon(themeName){
+        HoldOn.open({
+            theme:themeName,
+            message:"<h4 style='opacity:1;filter: alpha(opacity=100);'>Bitte warten Sie einen Moment</h4>"
+        });        
+        setTimeout(function(){
+            HoldOn.close();
+        },10000);
+    }
+    });
+</script>
+  )
+}
+[END]

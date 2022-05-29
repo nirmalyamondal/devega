@@ -1,0 +1,68 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="content">
+    <f:flashMessages />
+    <div class="row tx_devegaprofile">
+        <f:for each="{profiles}" as="profile">             
+            <div class="col user">
+                <div class="userimage">                    
+                    <f:media class="image-embed-item" file="{profile.image.originalResource.originalFile}" width="{settings.dimensions.maxWidth}c" height="{settings.dimensions.maxHeight}c" loading="{settings.media.lazyLoading}" />
+                </div>                
+                <div class="clearfix"></div>
+                <div class="contact-name">{profile.name}</div>
+                <div class="position">{profile.abteilung}</div>
+                <div class="positionmore">{profile.zusatz}</div>
+                <div class="phone">{profile.telefon}</div>
+                <div class="handy">{profile.handy}</div>
+                <div class="e-mail"><f:link.email email="{profile.email}" /></div>
+                <div class="link">
+                    <f:link.typolink parameter="{profile.link}">
+                       {profile.linktext}
+                    </f:link.typolink>
+                </div>
+            </div>            
+        </f:for>
+    </div>
+
+    <f:comment></f:comment>
+    <f:comment>    
+        <f:debug>{profile.image.originalResource}</f:debug>
+        <!--f:media class="image-embed-item" file="{profile.image.originalResource.originalFile}" alt="{profile.image.originalResource.description}" title="{profile.image.originalResource.title}" loading="{settings.media.lazyLoading}" width="400c" height="375c"  /-->
+        <!--a href="{slider.svideo.0.originalResource.publicUrl}"><f:image src="{slider.simage.0.uid}" alt="" treatIdAsReference="TRUE" width="640px" height="480" /></a-->
+        <f:image src="{profile.image}" alt="" />{profile.image.originalResource.name}
+        <img src="/fileadmin/ansprechpartner/ke.jpg" width="640" height="384" alt="{profile.name}" title="{profile.name}">
+    <table class="tx_devegaprofile">
+        <tr>
+            <th><f:translate key="tx_devegaprofile_domain_model_profile.name" /></th>
+            <th><f:translate key="tx_devegaprofile_domain_model_profile.image" /></th>
+            <th><f:translate key="tx_devegaprofile_domain_model_profile.abteilung" /></th>
+            <th><f:translate key="tx_devegaprofile_domain_model_profile.zusatz" /></th>
+            <th><f:translate key="tx_devegaprofile_domain_model_profile.telefon" /></th>
+            <th><f:translate key="tx_devegaprofile_domain_model_profile.handy" /></th>
+            <th><f:translate key="tx_devegaprofile_domain_model_profile.email" /></th>
+            <th><f:translate key="tx_devegaprofile_domain_model_profile.linktext" /></th>
+            <th><f:translate key="tx_devegaprofile_domain_model_profile.link" /></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <f:for each="{profiles}" as="profile">
+            <tr>
+                <td><f:link.action action="show" arguments="{profile : profile}">{profile.name}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{profile : profile}">{profile.image.originalResource.name}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{profile : profile}">{profile.abteilung}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{profile : profile}">{profile.zusatz}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{profile : profile}">{profile.telefon}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{profile : profile}">{profile.handy}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{profile : profile}">{profile.email}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{profile : profile}">{profile.linktext}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{profile : profile}">{profile.link}</f:link.action></td>
+                <td><f:link.action action="edit" arguments="{profile : profile}">Edit</f:link.action></td>
+                <td><f:link.action action="delete" arguments="{profile : profile}">Delete</f:link.action></td>
+            </tr>
+        </f:for>
+    </table>
+    </f:comment>
+    <f:link.action action="new">New Profile</f:link.action>
+</f:section>
+</html>

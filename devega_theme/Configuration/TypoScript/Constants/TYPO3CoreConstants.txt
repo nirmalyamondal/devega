@@ -1,0 +1,26 @@
+concatenateCss = 0
+compressCss = 0
+concatenateJs = 0
+compressJs = 0
+removeDefaultJS = 0
+removeDefaultCSS = 1
+disableBaseWrap = 0
+disablePrefixComment = 1
+content.defaultHeaderType = 2
+content.RTE_compliant = 0
+
+styles.content {
+	loginform.pid = 0
+	imgtext {
+		maxW = 1200
+		maxWInText = 1200
+		linkWrap.width = 800
+		responsive = 1 
+	}
+	textmedia {
+		maxW = 1200
+		maxWInText = 1200
+		linkWrap.width = 1200
+		linkWrap.height = 600
+	}
+}

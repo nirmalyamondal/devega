@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Frond End User Edit Template</title>
+</head>
+<body>
+
+<h1>FRONTEND USER EDIT</h1>
+<h2>EXAMPLE</h2>
+<h3>Attention: Please don't forget to add '&nbsp;' after the data values in the preview mode. If you don't, you will get problems with your IE-browser users</h3>
+
+
+<h2>'EDIT' Sales TEMPLATES:</h2>
+
+<p style="margin-top: 20px"><em>Form for editing of a fe_users Sales record:</em></p>
+<!-- ###TEMPLATE_EDIT### begin -->
+<div class="bg-light padding-lrtb">
+<form id="###FORM_NAME###" class="feuser-profile-edit" method="post" action="###FORM_URL###" enctype="multipart/form-data" ###FORM_ONSUBMIT###>
+
+<div class="form-row">
+	<div class="form-group col-md-6">
+		<!-- ###SUB_INCLUDED_FIELD_gender### -->
+			<!-- ###SUB_ERROR_FIELD_gender### -->
+			<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_gender###</p>
+			<!-- ###SUB_ERROR_FIELD_gender### -->
+			<!-- ###SUB_REQUIRED_FIELD_gender### -->
+			<p class="tx-srfeuserregister-pi1-error">###MISSING_GENDER###</p>
+			<!-- ###SUB_REQUIRED_FIELD_gender### -->
+			<!--###TCA_INPUT_gender###-->
+			<select size="1" class="tx-srfeuserregister-pi1-radio" id="tx-srfeuserregister-pi1-gender" name="FE[fe_users][gender]" title="Select your gender.">
+				<option value="0">Herr</option>
+				<option value="1" selected="selected">Frau</option>
+			</select>
+		<!-- ###SUB_INCLUDED_FIELD_gender### -->
+	</div>
+	<div class="form-group col-md-6">
+	</div>
+</div>
+
+<div class="form-row">
+	<div class="form-group col-md-6">
+		<!-- ###SUB_INCLUDED_FIELD_first_name### -->
+			<!-- ###SUB_ERROR_FIELD_first_name### -->
+			<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_first_name###</p>
+			<!-- ###SUB_ERROR_FIELD_first_name### -->
+			<!-- ###SUB_REQUIRED_FIELD_first_name### -->
+			<p class="tx-srfeuserregister-pi1-error">###MISSING_FIRST_NAME###</p>
+			<!-- ###SUB_REQUIRED_FIELD_first_name### -->
+			<input id="tx-srfeuserregister-pi1-first_name" type="text" class="tx-srfeuserregister-pi1-text" size="40" maxlength="###MAXLENGTH_first_name###" title="###TOOLTIP_FIRST_NAME###" name="###NAME_FIRST_NAME###" placeholder="###LABEL_FIRST_NAME###"/>
+		<!-- ###SUB_INCLUDED_FIELD_first_name### -->	
+	</div>
+	<div class="form-group col-md-6">
+		<!-- ###SUB_INCLUDED_FIELD_last_name### -->
+		<!-- ###SUB_ERROR_FIELD_last_name### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_last_name###</p>
+		<!-- ###SUB_ERROR_FIELD_last_name### -->
+		<!-- ###SUB_REQUIRED_FIELD_last_name### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_LAST_NAME###</p>
+		<!-- ###SUB_REQUIRED_FIELD_last_name### -->
+		<input id="tx-srfeuserregister-pi1-last_name" type="text" class="tx-srfeuserregister-pi1-text" size="40" maxlength="###MAXLENGTH_last_name###" title="###TOOLTIP_LAST_NAME###" name="###NAME_LAST_NAME###" placeholder="###LABEL_LAST_NAME###" />
+		<!-- ###SUB_INCLUDED_FIELD_last_name### -->	
+	</div>
+</div>
+	
+<div class="form-row">
+	<div class="form-group col-md-6">
+		<!-- ###SUB_INCLUDED_FIELD_company### -->
+		<!-- ###SUB_ERROR_FIELD_company### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_company###</p>
+		<!-- ###SUB_ERROR_FIELD_company### -->
+		<!-- ###SUB_REQUIRED_FIELD_company### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_COMPANY###</p>
+		<!-- ###SUB_REQUIRED_FIELD_company### -->
+		<input id="tx-srfeuserregister-pi1-company" type="text" class="tx-srfeuserregister-pi1-text" size="40" maxlength="###MAXLENGTH_company###" title="###TOOLTIP_COMPANY###" name="###NAME_COMPANY###"  placeholder="###LABEL_COMPANY###" />
+		<!-- ###SUB_INCLUDED_FIELD_company### -->
+	</div>
+	<div class="form-group col-md-6">
+		<!-- ###SUB_INCLUDED_FIELD_address### -->
+		<!-- ###SUB_ERROR_FIELD_address### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_address###</p>
+		<!-- ###SUB_ERROR_FIELD_address### -->
+		<!-- ###SUB_REQUIRED_FIELD_address### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_ADDRESS###</p>
+		<!-- ###SUB_REQUIRED_FIELD_address### -->
+		<input id="tx-srfeuserregister-pi1-address" type="text" class="tx-srfeuserregister-pi1-text" size="40" maxlength="###MAXLENGTH_address###" title="###TOOLTIP_ADDRESS###" name="###NAME_ADDRESS###" placeholder="###LABEL_ADDRESS###" />
+		<!-- ###SUB_INCLUDED_FIELD_address### -->	
+	</div>
+</div>	
+
+<div class="form-row">
+	<div class="form-group col-md-6">
+		<!-- ###SUB_INCLUDED_FIELD_zip### -->
+		<!-- ###SUB_ERROR_FIELD_zip### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_zip###</p>
+		<!-- ###SUB_ERROR_FIELD_zip### -->
+		<!-- ###SUB_REQUIRED_FIELD_zip### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_ZIP###</p>
+		<!-- ###SUB_REQUIRED_FIELD_zip### -->
+		<input id="tx-srfeuserregister-pi1-zip" type="text" class="tx-srfeuserregister-pi1-text" size="20" maxlength="###MAXLENGTH_zip###" title="###TOOLTIP_ZIP###" name="###NAME_ZIP###" placeholder="###LABEL_ZIP###" />
+		<!-- ###SUB_INCLUDED_FIELD_zip### -->	
+	</div>
+	<div class="form-group col-md-6">
+		<!-- ###SUB_INCLUDED_FIELD_city### -->
+		<!-- ###SUB_ERROR_FIELD_city### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_city###</p>
+		<!-- ###SUB_ERROR_FIELD_city### -->
+		<!-- ###SUB_REQUIRED_FIELD_city### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_CITY###</p>
+		<!-- ###SUB_REQUIRED_FIELD_city### -->
+		<input id="tx-srfeuserregister-pi1-city" type="text" class="tx-srfeuserregister-pi1-text" size="40" maxlength="###MAXLENGTH_city###" title="###TOOLTIP_CITY###" name="###NAME_CITY###" placeholder="###LABEL_CITY###" />
+		<!-- ###SUB_INCLUDED_FIELD_city### -->
+	</div>
+</div>
+
+<div class="form-row">
+	<div class="form-group col-md-6 for-country-select-pos">			
+		<!-- ###SUB_INCLUDED_FIELD_static_info_country### -->
+		<!-- ###SUB_REQUIRED_FIELD_static_info_country### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_STATIC_INFO_COUNTRY###</p>
+		<!-- ###SUB_REQUIRED_FIELD_static_info_country### -->
+		<select size="1" id="tx-srfeuserregister-pi1-static_info_country" name="FE[fe_users][static_info_country]" title="Select your country in the list.">
+			<option value="DEU" selected="selected">Deutschland</option>
+			<option value="AUT">Österreich</option>
+			<option value="CHE">Schweiz</option>
+			<option value="ITA">Italien</option>
+		</select>
+		<!-- ###SUB_INCLUDED_FIELD_static_info_country### -->
+	</div>
+	<div class="form-group col-md-6">
+		<!-- ###SUB_INCLUDED_FIELD_telephone### -->
+		<!-- ###SUB_ERROR_FIELD_telephone### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_telephone###</p>
+		<!-- ###SUB_ERROR_FIELD_telephone### -->
+		<!-- ###SUB_REQUIRED_FIELD_telephone### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_TELEPHONE###</p>
+		<!-- ###SUB_REQUIRED_FIELD_telephone### -->
+		<input id="tx-srfeuserregister-pi1-telephone" type="tel" class="tx-srfeuserregister-pi1-text" size="25" maxlength="###MAXLENGTH_telephone###" title="###TOOLTIP_TELEPHONE###" name="###NAME_TELEPHONE###" placeholder="###LABEL_TELEPHONE###" />
+		<!-- ###SUB_INCLUDED_FIELD_telephone### -->
+	</div>
+</div>	
+
+<div class="form-row">
+	<div class="form-group col-md-6">
+		<!-- ###SUB_INCLUDED_FIELD_cfname### -->
+			<!-- ###SUB_ERROR_FIELD_cfname### -->
+			<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_cfname###</p>
+			<!-- ###SUB_ERROR_FIELD_cfname### -->
+			<!-- ###SUB_REQUIRED_FIELD_cfname### -->
+			<!--p class="tx-srfeuserregister-pi1-error">###MISSING_CFNAME###</p-->
+			<!-- ###SUB_REQUIRED_FIELD_cfname### -->
+			<input id="tx-srfeuserregister-pi1-cfname" type="text" class="tx-srfeuserregister-pi1-text" size="40" maxlength="###MAXLENGTH_cfname###" title="###TOOLTIP_CFNAME###" name="FE[fe_users][cfname]" placeholder="###LABEL_CFNAME###"/>
+		<!-- ###SUB_INCLUDED_FIELD_cfname### -->	
+	</div>
+	<div class="form-group col-md-6">
+		<!-- ###SUB_INCLUDED_FIELD_clname### -->
+		<!-- ###SUB_ERROR_FIELD_clname### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_clname###</p>
+		<!-- ###SUB_ERROR_FIELD_clname### -->
+		<!-- ###SUB_REQUIRED_FIELD_clname### -->
+		<!--p class="tx-srfeuserregister-pi1-error">###MISSING_CLNAME###</p-->
+		<!-- ###SUB_REQUIRED_FIELD_clname### -->
+		<input id="tx-srfeuserregister-pi1-clname" type="text" class="tx-srfeuserregister-pi1-text" size="40" maxlength="###MAXLENGTH_clname###" title="###TOOLTIP_CLNAME###" name="FE[fe_users][clname]" placeholder="###LABEL_CLNAME###" />
+		<!-- ###SUB_INCLUDED_FIELD_clname### -->	
+	</div>
+</div>
+
+<div class="form-row">
+	<div class="form-group col-md-12">
+		<!-- ###SUB_INCLUDED_FIELD_terms_acknowledged### -->
+		<!-- ###SUB_REQUIRED_FIELD_terms_acknowledged### -->
+		<p class="tx-srfeuserregister-pi1-error">Bitte bestätigen Sie.</p>
+		<!-- ###SUB_REQUIRED_FIELD_terms_acknowledged### -->		
+		###TCA_INPUT_terms_acknowledged###
+		<label for="tx-srfeuserregister-pi1-terms_acknowledged" class="tnc_wrap">Ich akzeptiere die <a href="/index.php?id=144" target="_new">AGBs</a> und die <a href="/index.php?id=145" target="_new">Datenschutzerklärung</a> der deVega Medien GmbH.</label>
+		<!-- ###SUB_ERROR_FIELD_terms_acknowledged### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_terms_acknowledged###</p>
+		<!-- ###SUB_ERROR_FIELD_terms_acknowledged### -->		
+		<!-- ###SUB_INCLUDED_FIELD_terms_acknowledged### -->	
+	</div>
+</div>
+
+	<!-- ###SUB_INCLUDED_FIELD_name### -->
+	<dt>
+		<label for="tx-srfeuserregister-pi1-name">###LABEL_NAME### ###REQUIRED_NAME###</label>
+	</dt>
+	<dd>
+		<!-- ###SUB_ERROR_FIELD_name### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_name###</p>
+		<!-- ###SUB_ERROR_FIELD_name### -->
+		<!-- ###SUB_REQUIRED_FIELD_name### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_NAME###</p>
+		<!-- ###SUB_REQUIRED_FIELD_name### -->
+		<input id="tx-srfeuserregister-pi1-name" type="text" class="tx-srfeuserregister-pi1-text" size="40" maxlength="###MAXLENGTH_name###" title="###TOOLTIP_NAME###" name="###NAME_NAME###" />
+	</dd>
+	<!-- ###SUB_INCLUDED_FIELD_name### -->
+
+	<!-- ###SUB_INCLUDED_FIELD_middle_name### -->
+	<dt>
+		<label for="tx-srfeuserregister-pi1-middle_name">###LABEL_MIDDLE_NAME### ###REQUIRED_MIDDLE_NAME###</label>
+	</dt>
+	<dd>
+		<!-- ###SUB_ERROR_FIELD_middle_name### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_middle_name###</p>
+		<!-- ###SUB_ERROR_FIELD_middle_name### -->
+		<!-- ###SUB_REQUIRED_FIELD_middle_name### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_MIDDLE_NAME###</p>
+		<!-- ###SUB_REQUIRED_FIELD_middle_name### -->
+		<input id="tx-srfeuserregister-pi1-middle_name" type="text" class="tx-srfeuserregister-pi1-text" size="40" maxlength="###MAXLENGTH_middle_name###" title="###TOOLTIP_MIDDLE_NAME###" name="###NAME_MIDDLE_NAME###" />
+	</dd>
+	<!-- ###SUB_INCLUDED_FIELD_middle_name### -->
+
+	<!-- ###SUB_INCLUDED_FIELD_status### -->
+	<dt>
+		<label for="tx-srfeuserregister-pi1-status" onclick="document.getElementById(this.htmlFor).focus(); return false;">###LABEL_STATUS### ###REQUIRED_STATUS###</label>
+	</dt>
+	<dd>
+		<!-- ###SUB_ERROR_FIELD_status### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_status###</p>
+		<!-- ###SUB_ERROR_FIELD_status### -->
+		<!-- ###SUB_REQUIRED_FIELD_status### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_STATUS###</p>
+		<!-- ###SUB_REQUIRED_FIELD_status### -->
+		###TCA_INPUT_status###
+	</dd>
+	<!-- ###SUB_INCLUDED_FIELD_status### -->
+
+	<!-- ###SUB_INCLUDED_FIELD_title### -->
+	<dt>
+		<label for="tx-srfeuserregister-pi1-title">###LABEL_TITLE### ###REQUIRED_TITLE###</label>
+	</dt>
+	<dd>
+		<!-- ###SUB_ERROR_FIELD_title### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_title###</p>
+		<!-- ###SUB_ERROR_FIELD_title### -->
+		<!-- ###SUB_REQUIRED_FIELD_title### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_TITLE###</p>
+		<!-- ###SUB_REQUIRED_FIELD_title### -->
+		<input id="tx-srfeuserregister-pi1-title" type="text" class="tx-srfeuserregister-pi1-text" size="40" maxlength="###MAXLENGTH_title###" title="###TOOLTIP_TITLE###" name="###NAME_TITLE###" />
+	</dd>
+	<!-- ###SUB_INCLUDED_FIELD_title### -->
+
+	<!-- ###SUB_INCLUDED_FIELD_house_no### -->
+	<dt>
+		<label for="tx-srfeuserregister-pi1-address">###LABEL_HOUSE_NO### ###REQUIRED_HOUSE_NO###</label>
+	</dt>
+	<dd>
+		<!-- ###SUB_ERROR_FIELD_house_no### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_house_no###</p>
+		<!-- ###SUB_ERROR_FIELD_house_no### -->
+		<!-- ###SUB_REQUIRED_FIELD_house_no### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_HOUSE_NO###</p>
+		<!-- ###SUB_REQUIRED_FIELD_house_no### -->
+		<input id="tx-srfeuserregister-pi1-house_no" type="text" class="tx-srfeuserregister-pi1-text" size="40" maxlength="###MAXLENGTH_house_no###" title="###TOOLTIP_HOUSE_NO###" name="###NAME_HOUSE_NO###" />
+	</dd>
+	<!-- ###SUB_INCLUDED_FIELD_house_no### -->
+
+	<!-- ###SUB_INCLUDED_FIELD_country### -->
+	<dt>
+		<label for="tx-srfeuserregister-pi1-country">###LABEL_COUNTRY### ###REQUIRED_COUNTRY###</label>
+	</dt>
+	<dd>
+		<!-- ###SUB_ERROR_FIELD_country### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_country###</p>
+		<!-- ###SUB_ERROR_FIELD_country### -->
+		<!-- ###SUB_REQUIRED_FIELD_country### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_COUNTRY###</p>
+		<!-- ###SUB_REQUIRED_FIELD_country### -->
+		<input id="tx-srfeuserregister-pi1-country" type="text" class="tx-srfeuserregister-pi1-text" size="20" maxlength="###MAXLENGTH_country###" title="###TOOLTIP_COUNTRY###" name="###NAME_COUNTRY###" />
+	</dd>
+	<!-- ###SUB_INCLUDED_FIELD_country### -->
+
+	<!-- ###SUB_INCLUDED_FIELD_fax### -->
+	<dt>
+		<label for="tx-srfeuserregister-pi1-fax">###LABEL_FAX### ###REQUIRED_FAX###</label>
+	</dt>
+	<dd>
+		<!-- ###SUB_ERROR_FIELD_fax### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_fax###</p>
+		<!-- ###SUB_ERROR_FIELD_fax### -->
+		<!-- ###SUB_REQUIRED_FIELD_fax### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_FAX###</p>
+		<!-- ###SUB_REQUIRED_FIELD_fax### -->
+		<input id="tx-srfeuserregister-pi1-fax" type="tel" class="tx-srfeuserregister-pi1-text" size="25" maxlength="###MAXLENGTH_fax###" title="###TOOLTIP_FAX###" name="###NAME_FAX###" />
+	</dd>
+	<!-- ###SUB_INCLUDED_FIELD_fax### -->
+
+	<!-- ###SUB_INCLUDED_FIELD_module_sys_dmail_newsletter### -->
+	<dt>
+		<label for="tx-srfeuserregister-pi1-module_sys_dmail_newsletter">###LABEL_MODULE_SYS_DMAIL_NEWSLETTER### ###REQUIRED_MODULE_SYS_DMAIL_NEWSLETTER###</label>
+	</dt>
+	<dd>
+		<!-- ###SUB_REQUIRED_FIELD_module_sys_dmail_newsletter### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_MODULE_SYS_DMAIL_NEWSLETTER###</p>
+		<!-- ###SUB_REQUIRED_FIELD_module_sys_dmail_newsletter### -->
+		###TCA_INPUT_module_sys_dmail_newsletter###
+	</dd>
+	<!-- ###SUB_INCLUDED_FIELD_module_sys_dmail_newsletter### -->
+
+	<!-- ###SUB_INCLUDED_FIELD_module_sys_dmail_category### -->
+	<dt>
+		<label for="tx-srfeuserregister-pi1-module_sys_dmail_category">###LABEL_MODULE_SYS_DMAIL_CATEGORY### ###REQUIRED_MODULE_SYS_DMAIL_CATEGORY###</label>
+	</dt>
+	<dd>
+		<!-- ###SUB_ERROR_FIELD_module_sys_dmail_category### -->
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_module_sys_dmail_category###</p>
+		<!-- ###SUB_ERROR_FIELD_module_sys_dmail_category### -->
+		<!-- ###SUB_REQUIRED_FIELD_module_sys_dmail_category### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_MODULE_SYS_DMAIL_CATEGORY###</p>
+		<!-- ###SUB_REQUIRED_FIELD_module_sys_dmail_category### -->
+		###TCA_INPUT_module_sys_dmail_category###
+	</dd>
+	<!-- ###SUB_INCLUDED_FIELD_module_sys_dmail_category### -->
+
+	<!-- ###SUB_INCLUDED_FIELD_module_sys_dmail_html### -->
+	<dt>
+		<label for="tx-srfeuserregister-pi1-module_sys_dmail_html">###LABEL_MODULE_SYS_DMAIL_HTML### ###REQUIRED_MODULE_SYS_DMAIL_HTML###</label>
+	</dt>
+	<dd>
+		<!-- ###SUB_REQUIRED_FIELD_module_sys_dmail_html### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_MODULE_SYS_DMAIL_HTML###</p>
+		<!-- ###SUB_REQUIRED_FIELD_module_sys_dmail_html### -->
+		###TCA_INPUT_module_sys_dmail_html###
+	</dd>
+	<!-- ###SUB_INCLUDED_FIELD_module_sys_dmail_html### -->
+
+
+	<!-- ###SUB_INCLUDED_FIELD_language### -->
+	<dt>
+		<label for="tx-srfeuserregister-pi1-language" onclick="document.getElementById(this.htmlFor).focus(); return false;">###LABEL_LANGUAGE### ###REQUIRED_LANGUAGE###</label>
+	</dt>
+	<dd>
+		<!-- ###SUB_REQUIRED_FIELD_language### -->
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_LANGUAGE###</p>
+		<!-- ###SUB_REQUIRED_FIELD_language### -->
+		###SELECTOR_LANGUAGE###
+	</dd>
+	<!-- ###SUB_INCLUDED_FIELD_language### -->
+
+	<!-- ###SUB_INCLUDED_FIELD_www### -->
+	<dt style="display:none;">
+		<label for="tx-srfeuserregister-pi1-www">###LABEL_WWW### ###REQUIRED_WWW###</label>
+	</dt>
+	<dd style="display:none;">
+		<p class="tx-srfeuserregister-pi1-error">###EVAL_ERROR_FIELD_www###</p>
+		<p class="tx-srfeuserregister-pi1-error">###MISSING_WWW###</p>
+		<input id="tx-srfeuserregister-pi1-www" type="url" class="tx-srfeuserregister-pi1-text" size="40" maxlength="###MAXLENGTH_www###" title="###TOOLTIP_WWW###" name="###NAME_WWW###" value="https://www.devega-praesentationsmappen.de/" />
+	</dd>
+	<!-- ###SUB_INCLUDED_FIELD_www### -->
+
+
+	
+<div class="form-row">
+	<div class="form-group col-md-5">
+		<a href="index.php?id=155&logintype=logout" class="btn btn-short btn-primary btn-fl white-arrow-left">&nbsp;&nbsp; Abmelden</a>
+	</div>
+	<div class="form-group col-md-7">
+			###HIDDENFIELDS###
+			<input type="submit" name="tx_srfeuserregister_pi1[submit]" value="###LABEL_BUTTON_UPDATE### &nbsp;&nbsp;&nbsp;" class="btn btn-primary btn-fl tx-srfeuserregister-pi1-submit white-arrow-right" />
+			<!-- ###SUB_LINKTOPID_ADD_BUTTON### -->
+			<input type="submit" name="tx_srfeuserregister_pi1[linkToPID]" value="###LABEL_BUTTON_UPDATE_AND_MORE### &nbsp;&nbsp;&nbsp;" class="btn btn-primary btn-fl tx-srfeuserregister-pi1-submit white-arrow-right" />
+			<!-- ###SUB_LINKTOPID_ADD_BUTTON### -->
+	</div>
+</div>	
+
+</form>
+</div>
+<!-- ###TEMPLATE_EDIT### end-->
+
+
+
+
+<p style="margin-top: 20px"><em>This is shown when the user profile has been updated</em></p>
+<!-- ###TEMPLATE_EDIT_SAVED### begin-->
+<h4>###LABEL_V_DEAR###</h4>
+<p>###LABEL_V_REGISTRATION_UPDATED_SUBJECT###</p>
+<p>###LABEL_V_REGISTRATION_UPDATED_MESSAGE1###</p>
+<p>###LABEL_KIND_REGARDS###</p>
+<h4>###SITE_NAME###</h4>
+<script>
+//window.location = "http://www.devega-praesentationsmappen.de/index.php?id=189&ADMCMD_simUser=1";
+</script>
+<!-- ###TEMPLATE_EDIT_SAVED### end-->
+
+</body>
+</html>

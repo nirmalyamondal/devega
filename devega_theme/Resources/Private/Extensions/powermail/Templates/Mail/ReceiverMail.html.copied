@@ -1,0 +1,51 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+<f:layout name="Mail" />
+
+Render Powermail Mail to Receiver
+{powermail_rte}									Variable is filled with values from RTE in backend
+{powermail_all}									Outputs all fields
+{marker1}, {firstname}, etc.. 					Outputs a field
+{label_marker1}, {label_firstname}, etc... 		Outputs a label to a field
+{mail}											Complete Mail Object
+{email}											Email Configuration
+{settings}										TypoScript Settings
+NOTE: See example section after main section
+
+<f:section name="main">
+<vh:Misc.Variables mail="{mail}" type="mail" function="receiver">
+<p>#requester {email}<br />#assignee graef@devega.de<br />#tags bestellung konfigurator neu {produkt}<br />#high</p>
+<p>&nbsp;</p>
+<p>{sex}&nbsp;{last_name},</p>
+<p>vielen Dank für Ihre Bestellung.<br />Sie erhalten in Kürze eine Bestellbestätigung. Wir prüfen nun Ihre Druckdatei und senden Ihnen ein Freigabe-PDF per E-Mail. Sobald Sie uns die Druckfreigabe erteilen, beginnt die Produktion.</p>
+<p>Sollten Sie noch Fragen haben, antworten Sie einfach auf diese E-Mail oder rufen Sie uns an unter +49 (0)821 502 11 38.</p>
+<p>Mit den besten Grüßen<br />Ihr deVega Team</p>
+<p><strong>Ihre Nachricht zur Bestellung:&nbsp;</strong>{comments}<br /><strong>Bezahlung:&nbsp;</strong>{ichzahlepervorkassemit2skonto}<br /><strong>DruckdatenX:</strong>&nbsp;<a href="http://devega.pimhosting.de/uploads/tx_powermail/{druckdateihochladen}" target="_new">{druckdateihochladen}</a></p>
+</vh:Misc.Variables>
+</f:section>
+
+
+
+
+
+
+THIS IS ONLY AN EXAMPLE SECTION
+
+<f:section name="example">
+
+	1. Get values from RTE from Backend:
+	<vh:Misc.Variables mail="{mail}" type="mail" function="receiver">
+		<f:format.html parseFuncTSPath="lib.parseFunc_powermail">{powermail_rte}</f:format.html>
+	</vh:Misc.Variables>
+
+
+	2. Get all Values by using powermail_all
+	<vh:string.escapeLabels>
+		{powermail_all}
+	</vh:string.escapeLabels>
+
+	3. Get some lonely fields
+	Hi {firstname} {lastname}, thank you for your email.<br />
+	{label_email}: {email}<br />
+	{label_text}: {text}
+
+</f:section>

@@ -1,0 +1,23 @@
+[globalVar = GPmerged:tx_felogin_pi1|forgot = 1]
+page.headerData.6 = TEXT
+page.headerData.6.value (
+	<title>Neues Passwort erstellen</title>
+	<meta name="google-site-verification" content="{$constants.googleSiteVerification}" />
+)
+[global]
+
+[globalVar = GPmerged:tx_felogin_pi1|forgot = 1] && [globalVar = GPmerged:tx_felogin_pi1|forgot_hash != '']
+page.headerData.6 = TEXT
+page.headerData.6.value (
+	<title>Bitte überprüfen Sie Ihr Postfach</title>
+	<meta name="google-site-verification" content="{$constants.googleSiteVerification}" />
+)
+[global]
+
+[globalVar = GPmerged:tx_felogin_pi1|user != ''] && [globalVar = GPmerged:tx_felogin_pi1|forgothash != '']
+page.headerData.6 = TEXT
+page.headerData.6.value (
+	<title>Passwort ändern</title>
+	<meta name="google-site-verification" content="{$constants.googleSiteVerification}" />
+)
+[global]

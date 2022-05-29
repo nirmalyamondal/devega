@@ -1,0 +1,31 @@
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Profile</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<settings.profile>
+						<TCEforms>
+							<label>LLL:EXT:devega_profile/Resources/Private/Language/locallang_db.xlf:tx_devegaprofile_domain_model_profile.flexform.header</label>
+							<config>
+								<type>select</type>
+								<foreign_table>tx_devegaprofile_domain_model_profile</foreign_table>
+								<foreign_table_where> ORDER BY tx_devegaprofile_domain_model_profile.name ASC</foreign_table_where>
+								<size>5</size>
+								<minitems>1</minitems>
+								<maxitems>3</maxitems>
+								<multiple>1</multiple>
+								<renderType>selectMultipleSideBySide</renderType>
+							</config>
+						</TCEforms>
+					</settings.profile>
+
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

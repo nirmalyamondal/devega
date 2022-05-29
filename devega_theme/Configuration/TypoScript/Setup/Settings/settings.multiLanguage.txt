@@ -1,0 +1,10 @@
+config {
+  linkVars = L
+  sys_language_uid = 0
+  language = de
+  locale_all = de_DE.UTF-8
+  htmlTag_langKey = de
+  htmlTag_setParams = lang="de" dir="ltr" class="no-js"
+  # fall back to language 'da', then to 'de' and as last resort use 'en'
+  sys_language_mode = content_fallback;1,0
+} 

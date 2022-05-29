@@ -1,0 +1,50 @@
+lib.menu = HMENU
+lib.menu {
+  1 = TMENU
+  1 {
+    wrap = |
+    expAll = 0
+    noBlur = 1
+    NO = 1
+    NO.wrapItemAndSub = <li class="">|</li>
+    NO.ATagParams = class=""
+    ACT = 1
+    ACT.allWrap = <li class="">|</li>
+    ACT.ATagParams = class=""
+  }
+}
+
+lib.content = CONTENT
+lib.content < styles.content.get
+
+lib.contentRight = CONTENT
+lib.contentRight {
+  table = tt_content
+  select {
+    where = {#colPos}=2
+    orderBy = sorting
+    #for latest version language field is not required
+    languageField = sys_language_uid
+  }
+}
+
+#lib.content {
+#  tables = tt_content
+#  select {
+#    pidInList = this
+#    where = deleted = 0 AND hidden = 0 AND colPos = 0
+#    languageField = sys_language_uid
+#  }
+#}
+
+lib.contentFooter = CONTENT
+lib.contentFooter {
+  table = tt_content
+  select {
+    #specify the content uid
+    where = uid = {$footer_content_uid}
+    pidInList = {$footer_content_pageid}
+    #for latest version language field is not required
+    languageField = sys_language_uid
+  }
+}

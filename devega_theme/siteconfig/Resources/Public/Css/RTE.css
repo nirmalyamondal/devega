@@ -1,0 +1,24 @@
+a.blue-button-link {
+  background-color:#1a9afc;
+  padding:10px 15px 10px 30px;
+  margin-top:40px;
+  color:#fff;
+  text-decoration:none;
+  background-image: url(../Images/blue_white_arrow.jpg);
+  background-repeat:no-repeat;
+  background-position: 5px center;
+}
+a.detail {
+    background-image: url(../Images/morelink.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 20px;
+    color: #828282;
+}
+a.stil-link {
+    padding-left: 20px;
+    color: #828282;
+}
+ul.ul-style-disc li {
+    list-style: disc;
+}

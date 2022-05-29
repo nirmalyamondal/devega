@@ -1,0 +1,66 @@
+[page["uid"] == 1]
+  page.bodyTag = <body id="home">
+[else]
+  page.bodyTag = <body>
+[END]  
+
+[globalVar = TSFE:id = 1]
+    page.10.subparts.MAINNAV.alwaysActivePIDlist = 2
+[global]
+
+[page["uid"] == 133]
+# Mappenkonfigurator [133]
+[END]
+
+[page["uid"] == 155]
+# Ihre Konfiguration ist abgeschlossen [155]
+[END]
+
+[page["uid"] == 185]
+# Registrierung [185]
+  tt_content.stdWrap.innerWrap.cObject.if {
+    equals.field = CType
+    value = html
+    negate = 1
+  }
+[END]
+
+[page["uid"] == 188]
+# Bestellung abschließen [188]
+#To remove blank P tag
+tt_content.stdWrap.dataWrap >
+lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines >
+RTE.default.proc {
+    entryHTMLparser_db {
+        tags {
+            p.rmTagIfNoAttrib = 1
+        }
+    }
+}
+[END]
+
+[page["uid"] == 189]
+# Danke für Ihre Anfrage! [189]
+tt_content.html.stdWrap.replacement {
+    50 {
+      search = PLACEHOLDER
+      replace = TEXT
+      replace.insertData = 1
+      replace.data = TSFE:fe_user|user|username
+      #useRegExp = 1
+    }
+}
+[END]
+
+[page["uid"] == 201]
+# Danke [201]
+[END]
+
+[page["uid"] == 207]
+# Bitte prüfen Sie Ihre Benutzerdaten Sales [207]
+tt_content.stdWrap.innerWrap.cObject.if {
+  equals.field = CType
+  value = html
+  negate = 1
+}
+[END]

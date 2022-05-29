@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Templates for felogin</title>
+</head>
+<body>
+
+<h1>Common markers</h1>
+<p>These are substituted in all felogin item displaying templates.</p>
+
+<h2>Markers</h2>
+<ul>
+  <li>###ACTION_URI###     - URI of the request for the login/logout form</li>
+  <li>###EXTRA_HIDDEN###   - Hook required (additional hidden field used by kb_md5fepw extension by Kraft Bernhard)</li>
+  <li>###ON_SUBMIT###      - Hook required (used by kb_md5fepw extension by Kraft Bernhard)</li>
+  <li>###PREFIXID###       - Same as class name ('tx_felogin_pi1') useful to get a unique classname prefix</li>
+  <li>###REDIRECT_URL###   - URL of redirection upon login</li>
+  <li>###NOREDIRECT###     - if set, no redirect will be done</li>
+  <li>###STORAGE_PID###    - explicit enough I guess (if not : id of the page where user are stored)</li>
+  <li>###STATUS_HEADER###  - depends of the template</li>
+  <li>###STATUS_MESSAGE### - depends of the template</li>
+</ul>
+
+<h2>Wrap parts</h2>
+<ul>
+  <li>###HEADER_VALID###  - useful to define what to show/hide</li>
+  <li>###MESSAGE_VALID### - useful to define what to show/hide</li>
+  <li>###FORGOTP_VALID### - useful to define what to show/hide</li>
+  <li>###PERMALOGIN_VALID### - useful to define what to show/hide</li>
+</ul>
+
+<h2>felogin Language Markers (see pi/locallang.xlf)</h2>
+<ul>
+  <li>###EMAIL_LABEL###                 - corresponding to 'your_email'</li>
+  <li>###FORGOT_PASSWORD###             - corresponding to 'forgot_password'</li>
+  <li>###FORGOT_PASSWORD_BACKTOLOGIN### - corresponding to 'forgot_password_backToLogin'</li>
+  <li>###FORGOT_PASSWORD_ENTEREMAIL###  - corresponding to 'forgot_password_enterEmail'</li>
+  <li>###LOGIN_LABEL###                 - corresponding to 'login'</li>
+  <li>###PASSWORD_LABEL###              - corresponding to 'password'</li>
+  <li>###SEND_PASSWORD###               - corresponding to 'send_password'</li>
+  <li>###USERNAME_LABEL###              - corresponding to 'username'</li>
+</ul>
+
+<!--###TEMPLATE_LOGIN###-->
+<div class="status-top-loginform">
+<h2>Ihre Konfiguration ist abgeschlossen.</h2>
+<p>Sie erhalten mit Ihrer Anmeldung/Registrierung sofort:</p>
+<p><span class="textcolor">✓</span> unser Angebot mit Preisstaffel</p>
+<p><span class="textcolor">✓</span> die passende Layoutkontur zu Ihrer Mappe</p>
+<p><span class="textcolor">✓</span> ein Datenblatt mit Tipps zur Mappengestaltung</p>
+<p><span class="textcolor">✓</span> auf Wunsch, eine kostenfreie Musterkollektion</p>
+<p>&nbsp;</p>
+</div>
+<div class="bg-light padding-lrtb">
+<!--###STATUS_HEADER###-->
+<div class="status-text-prelogin">Ich habe bereits ein Konto</div>
+###STATUS_MESSAGE_ERR###
+<!-- ###LOGIN_FORM### -->
+<form action="###ACTION_URI###" target="_top" method="post" onsubmit="###ON_SUBMIT###">
+  <fieldset>
+  <!--legend>###LEGEND###</legend-->
+  <div>
+    <input type="text" id="user" name="user" value="" placeholder="E-Mail" class="login-reg-ip-login"/>
+  </div>
+  <div>
+    <input type="password" id="pass" name="pass" value="" placeholder="Passwort" data-rsa-encryption="" class="login-reg-ip-login" />
+  </div>
+
+  <!--###PERMALOGIN_VALID###-->
+    <div>
+      <label for="permalogin">###PERMALOGIN###</label>
+      <input name="permalogin" value="0" type="hidden" ###PERMALOGIN_HIDDENFIELD_ATTRIBUTES### id="permaloginHiddenField" />
+      <input name="permalogin" value="1" type="checkbox" ###PERMALOGIN_CHECKBOX_ATTRIBUTES### id="permalogin"  onclick="document.getElementById('permaloginHiddenField').disabled = this.checked;" />
+    </div>
+  <!--###PERMALOGIN_VALID###-->
+
+  <div class="submit-login-btndiv">
+    <input type="submit" name="submit" value="###LOGIN_LABEL### &nbsp;" class="btn btn-primary btn-fl white-arrow-right" />
+    <!--###FORGOTP_VALID###-->
+    <div class="forgot-pwd-link"><!--###FORGOT_PASSWORD_LINK###-->###FORGOT_PASSWORD###<!--###FORGOT_PASSWORD_LINK###--></div>
+    <!--###FORGOTP_VALID###-->
+  </div>
+
+  <div class="felogin-hidden">
+    <input type="hidden" name="logintype" value="login" />
+    <input type="hidden" name="pid" value="###STORAGE_PID###" />
+    <input type="hidden" name="redirect_url" value="###REDIRECT_URL###" />
+    <input type="hidden" name="###PREFIXID###[noredirect]" value="###NOREDIRECT###" />
+    ###EXTRA_HIDDEN###
+  </div>
+  </fieldset>
+</form>
+
+
+
+<!-- ###LOGIN_FORM### -->
+</div>
+<!--###TEMPLATE_LOGIN###-->
+
+<!--###TEMPLATE_LOGOUT###-->
+<div class="bg-light padding-lrtb">
+###STATUS_HEADER###<!--
+###STATUS_MESSAGE###-->
+
+<form action="###ACTION_URI###" target="_top" method="post">
+  <fieldset>
+  <!--legend>###LEGEND###</legend-->
+  <div>
+    <label>###USERNAME_LABEL###</label>
+     ###USERNAME###
+    </div>
+  <div>
+    <input type="submit" name="submit" value="###LOGOUT_LABEL### &nbsp;&nbsp;&nbsp;" class="btn btn-primary btn-fl white-arrow-right" />
+   </div>
+
+  <div class="felogin-hidden">
+    <input type="hidden" name="logintype" value="logout" />
+    <input type="hidden" name="pid" value="###STORAGE_PID###" />
+    <input type="hidden" name="###PREFIXID###[noredirect]" value="###NOREDIRECT###" />
+  </div>
+  </fieldset>
+</form>
+</div>
+<!--###TEMPLATE_LOGOUT###-->
+
+<!--###TEMPLATE_FORGOT###-->
+
+<!--###STATUS_HEADER###-->
+###STATUS_MESSAGE###
+<!-- ###FORGOT_FORM### -->
+<div class="status-top-loginform">
+<h2>Neues Passwort erstellen.</h2>
+<p>Sie haben Ihr Passwort vergessen oder möchten es ändern? Kein Problem. Geben Sie hier Ihre E-Mail-Adresse ein, mit der Sie sich bei uns registriert haben.<br/>
+Ihre Konfiguration können Sie danach fortsetzen.</p>
+<p>&nbsp;</p>
+</div>
+<div class="bg-light padding-lrtb">
+<form action="###ACTION_URI###" method="post">
+    <div class="felogin-hidden">
+    <input type="hidden" name="tx_felogin_pi1[forgot_hash]" value="###FORGOTHASH###" />
+  </div>
+  <fieldset>
+  <!--legend>###LEGEND###</legend-->
+  <div>
+    <!--label for="tx_felogin_pi1-forgot-email">###DATA_LABEL###</label-->
+    <input type="text" name="###FORGOT_EMAIL###" id="tx_felogin_pi1-forgot-email" class="login-reg-ip-login" placeholder="E-Mail" />
+  </div>
+  <div>
+    <input type="submit" name="submit" value="Weiter &nbsp;&nbsp;&nbsp;" class="btn btn-primary btn-fl white-arrow-right" />
+    <!--div class="forgot-pwd-link"><p>###BACKLINK_LOGIN###&nbsp;</p></div-->
+   </div>
+  </fieldset>
+</form>
+</div>
+<!-- ###FORGOT_FORM### -->
+
+
+<div class="bg-light-no padding-lrtb-zuruckfp">
+<div style="set-some-space">&nbsp;</div>
+<div style="set-some-space">&nbsp;</div>
+<div class="status-text-prelogin">&nbsp;</div>  
+<p><a href="index.php?id=155" class="btn btn-short btn-primary btn-fl white-arrow-left">&nbsp;&nbsp; Zurück zum Login</a></p>
+<p>&nbsp;</p>  
+</div>
+<!--###TEMPLATE_FORGOT###-->
+
+<!--###TEMPLATE_CHANGEPASSWORD###-->
+
+<!--###STATUS_HEADER###
+###STATUS_MESSAGE###-->
+<!-- ###CHANGEPASSWORD_FORM### -->
+<h2>Passwort ändern</h2>
+<p>Bitte geben Sie Ihr neues Passwort ein und wiederholen Ihre Eingabe. Ihr Passwort muss mindestens 6 Zeichen beinhalten.</p>
+<p>&nbsp;</p>
+<div class="bg-light padding-lrtb">
+<form action="###ACTION_URI###" method="post">
+    <div>
+      <!--label for="tx_felogin_pi1-newpassword1">###NEWPASSWORD1_LABEL###</label-->
+      <input type="password" name="###NEWPASSWORD1###" id="tx_felogin_pi1-newpassword1" class="login-reg-ip-login" placeholder="###NEWPASSWORD1_LABEL###"/>
+    </div>
+    <div>
+      <!--label for="tx_felogin_pi1-newpassword2">###NEWPASSWORD2_LABEL###</label-->
+      <input type="password" name="###NEWPASSWORD2###" id="tx_felogin_pi1-newpassword2" class="login-reg-ip-login" placeholder="###NEWPASSWORD2_LABEL###" />
+    </div>
+    <div>
+      <input type="submit" name="tx_felogin_pi1[changepasswordsubmit]" value="Neues Passwort speichern &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" class="btn btn-primary btn-fl tx-srfeuserregister-pi1-submit white-arrow-right" />
+    <p>&nbsp;</p>
+     </div>
+</form>
+<!-- ###CHANGEPASSWORD_FORM### --><!--btn btn-short btn-primary btn-fl white-arrow-left-->
+###BACKLINK_LOGIN###
+</div>
+<!--###TEMPLATE_CHANGEPASSWORD###-->

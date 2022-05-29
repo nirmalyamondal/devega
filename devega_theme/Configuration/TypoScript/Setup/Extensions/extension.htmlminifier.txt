@@ -1,0 +1,5 @@
+plugin.tx_htmlminifier {
+	settings {
+		ignorePids = 0,9999,8888
+	}
+}

@@ -1,0 +1,27 @@
+plugin.tx_devegaprofile_pi1 {
+    view {
+        layoutRootPaths >
+        templateRootPaths >
+        partialRootPaths >        
+        templateRootPaths.20 = {$templateExtensionPath}/devega_profile/
+        partialRootPaths.20 = {$templateExtensionPath}/devega_profile/
+        layoutRootPaths.20 = {$templateExtensionPath}/devega_profile/
+    }
+    persistence {
+        storagePid = {$plugin.tx_devegaprofile_pi1.persistence.storagePid}
+        #recursive = 1
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+    }
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+    settings {
+        media.lazyLoading = lazy
+        dimensions.maxHeight = 300
+        dimensions.maxWidth = 300
+    }
+}

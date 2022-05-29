@@ -1,0 +1,153 @@
+/*.navbar-default { height:210px;}*/
+.serviceHotline {margin-top:27px;}
+.serviceHotlineTop { margin-top: 27px;}
+.rootline { margin:20px 0 10px 0; }
+a.template-kontakt-help-anchor-close {margin-left:20px ! important;}
+.template-kontakt-help, 
+li.kontaktTelIcon a.template-kontakt-help-anchor-close {
+  display:none;
+}
+.template-kontakt-help {
+  display:none;
+  /*position:absolute; overflow:hidden;*/
+  background-color:#fff;
+}
+ul.navbar-nav li {
+    margin: 0;
+    padding: 0px 20px;
+}
+ul.navbar-nav li a {
+  padding: 5px 30px 5px 0px;
+}
+ul.navbar-nav ul li a{
+  padding: 0 30px 0 0px;
+}
+.link-light-green:hover, .link-light-green .active,
+ul.navbar-nav ul li a:hover, ul.navbar-nav ul li a.active,
+ul.footer-nav ul li a:hover, ul.footer-nav ul li a.active {
+  color: #1a9afc ! important;
+}
+.contact-menu { padding:0; width: 288px; opacity:1; }
+.contact-menu .small_slogan { position:relative;visibility: visible; padding-top:5px; }
+.ce-column img.image-embed-item { width:100%; height:100%;}
+ul.firstMetaNav {margin-right:42px;margin-bottom: 25px;}
+ul.secondMetaNav {margin-right:55px;margin-bottom: 25px;}
+div.row ul.thirdMetaNav {margin-right:0px; margin-bottom: 25px;}
+/*fileadmin\devega\Resources\Public\Images/morelink.png*/
+hr.hr-ruler-before, hr.hr-ruler-after {
+  border-width: 1px;
+    border-color: #000;
+}
+a.blue-button-link {
+  background-color:#1a9afc;
+  padding:10px 25px 15px 50px;
+  margin-top:40px;
+  color:#fff;
+  text-decoration:none;
+  /*background-image: url('morelink.png');*/
+  background-image: url(../Images/blue_white_arrow.jpg);
+  background-repeat:no-repeat;
+  background-position:10% 40%;
+}
+ul.ul-style-disc li {
+    list-style: disc;
+}
+
+ul.footer-nav ul li a:hover,
+ul.footer-nav ul li a.active,
+ul.navbar-nav ul li a:hover,
+ul.navbar-nav ul li a.active,
+.contact-menu a:hover,
+.contact-menu a.active,
+h1, h2, h3, 
+.teaser h2,
+.leistung h2,
+.user h4,
+.multicolumnContainer h2, 
+.multicolumnContainer h3,
+.flex-control-paging li a.flex-active,
+.flex-direction-nav a,
+.user .position,
+.user .positionmore,
+h2.panel-title,
+#c553 {
+  color:#1a9afc ! important;
+}
+.flex-control-paging li a.flex-active
+{
+  background:#1a9afc;
+}
+.flex-control-paging li a.flex-active {
+  background:#fff ! important;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  z-index:9999;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #f0f0f0;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  color:#1a9afc;
+}
+.modal-content h1{
+    max-width: 90%;
+  margin-bottom:30px;
+}
+.modal-content p { margin-top:15px;}
+hr.hrLineStyled { border-bottom:1px solid #000; }
+/* The Close Button */
+.closeBtn {
+    float: right;
+    font-size: 48px;
+  color: #000;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.grey-text {
+  color:#828282;
+}
+.header_slogan_span {
+  margin:17px 0;
+  line-height:32px;
+  font-size:30px;
+  font-family:"Adobe Garamond W08", Times New Roman, Times, serif;
+}
+h4 {
+  font-size: 20px;
+    line-height: 23px;
+}
+.fsBody, 
+.fsSupporting, 
+.fsBody input, 
+.wf-active .fsBody, 
+.wf-active .fsBody input, 
+.wf-active .fsSignature, 
+.survey-mode.fsBody .fsForm .survey-header .fsSubmit.fsPagination .fsNextButton:before, 
+.survey-mode.fsBody .fsForm .survey-header .fsSubmit.fsPagination .fsPreviousButton:before,
+.fsBody .fsLabel, 
+.fsBody label,
+.fsBody input { 
+  font-family:"Helvetica Neue LT W01_65 Md", Arial, Helvetica, sans-serif ! important;
+}

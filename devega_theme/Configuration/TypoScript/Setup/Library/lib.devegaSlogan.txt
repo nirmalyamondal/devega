@@ -1,0 +1,32 @@
+lib.devegaSlogan = CONTENT
+lib.devegaSlogan.wrap = |
+lib.devegaSlogan {
+    table = tt_content
+    select {
+      where = colPos = 0
+      pidInList = {$sloganPageId}
+      languageField = sys_language_uid
+    }
+}
+
+lib.siteSlogan = CONTENT
+lib.siteSlogan.wrap = |
+lib.siteSlogan {
+    table = tt_content
+    select {
+      where = colPos = 3
+      pidInList = {$sloganPageId}
+      languageField = sys_language_uid
+    }
+}
+
+lib.popupKontakt = CONTENT
+lib.popupKontakt.wrap = |
+lib.popupKontakt {
+    table = tt_content
+    select {
+      where = colPos = 2
+      pidInList = {$sloganPageId}
+      languageField = sys_language_uid
+    }
+}

@@ -1,0 +1,3 @@
+
+lib.fluidContent.templateRootPaths.30 = fileadmin/devega/Resources/Private/Templates/ext/fluid_styled_content/Resources/Private/Templates/
+lib.fluidContent.layoutRootPaths.30 = fileadmin/devega/Resources/Private/Templates/ext/fluid_styled_content/Resources/Private/Layouts/

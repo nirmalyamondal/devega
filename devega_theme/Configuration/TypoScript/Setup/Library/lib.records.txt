@@ -1,0 +1,32 @@
+lib.logoLeiste = RECORDS
+lib.logoLeiste {
+  tables = tt_content
+  source = 12
+  dontCheckPid = 40
+}
+
+lib.contactFooter = RECORDS
+lib.contactFooter {
+  tables = tt_content
+  source = 13
+  dontCheckPid = 40
+}
+
+
+lib.siteTitle = COA
+lib.siteTitle  {
+	10 = TEXT 
+	10 {
+		field = tx_metaseo_pagetitle_rel
+		ifEmpty.data = {$lll}siteTitle
+		wrap = <h2>|</h2>
+	}
+	20 = TEXT 
+	20 {
+		data = page:title
+		data = leveltitle:-1
+		case = upper
+		wrap = <h3>|</h3>
+	}
+    wrap = |
+  }  

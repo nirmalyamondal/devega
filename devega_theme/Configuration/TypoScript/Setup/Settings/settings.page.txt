@@ -1,0 +1,28 @@
+page.10 {   
+    settings {
+        #Extra Page Uid Settings
+        sloganPageId = {$sloganPageId}
+        Spalte1PageId = {$Spalte1PageId}
+        Spalte2PageId = {$Spalte2PageId}
+        Spalte3PageId = {$Spalte3PageId}
+        Spalte4PageId = {$Spalte4PageId}
+    }
+    variables {   
+    }
+}
+
+lib.content < styles.content.get
+lib.content.select.where = colPos=0
+
+lib.left < styles.content.get
+lib.left.select.where = colPos=1
+
+lib.right < styles.content.get
+lib.right.select.where = colPos=2
+
+lib.border < styles.content.get
+lib.border.select.where = colPos=3
+
+#This call is a quick fix to store page url into session to get a back link require re-test
+page.2267 < lib.backlink
+page.2267.stdWrap.wrap = <span style="display:none">|</span>

@@ -1,0 +1,138 @@
+[page["uid"] == 155]
+#Ihre Konfiguration ist abgeschlossen [155]
+[END]
+
+[page["uid"] == 185]
+#Registrierung [185]
+[END]
+
+[page["uid"] == 187]
+#Bitte prüfen Sie Ihre Benutzerdaten [187]
+[END]
+
+[page["uid"] == 188]
+#Bestellung abschließen [188]
+lib.parseFunc_powermail.nonTypoTagStdWrap.encapsLines >
+plugin.tx_powermail {
+  view {
+    templateRootPaths.20 = {$templateExtensionsPath}/powermail/Templates
+    partialRootPaths.20 = {$templateExtensionsPath}/powermail/Partials
+  }
+  setup {
+    sender.addDisclaimerLink = 0
+    misc {
+      htmlForLabels = 1
+      htmlForHtmlFields = 1
+      file.randomizeFileName = 0
+    }
+    prefill {
+      first_name = TEXT
+      first_name.data = TSFE:fe_user|user|first_name
+      last_name = TEXT
+      last_name.data = TSFE:fe_user|user|last_name
+      comments = TEXT
+      comments.data = TSFE:fe_user|user|comments
+      country = TEXT
+      country.data = TSFE:fe_user|user|static_info_country
+      produkt = TEXT    
+      produkt.data = TSFE:fe_user|user|www    
+      pricehidden = TEXT
+      pricehidden.data = TSFE:fe_user|user|price
+      auflagehidden = TEXT
+      auflagehidden.data = TSFE:fe_user|user|auflage
+      angebothidden = TEXT
+      angebothidden.data = TSFE:fe_user|user|angebot
+      subject = TEXT
+      subject.data = TSFE:fe_user|user|description
+    }
+    receiver {
+      mailformat = html
+      overwrite.replyToEmail >
+      overwrite.replyToName >
+      overwrite.subject = COA
+      overwrite.subject {
+        10 = TEXT
+        10.data = GP:tx_powermail_pi1|field|subject
+      }
+      overwrite.senderName.value = deVega Präsentationsmappen
+      overwrite.senderEmail.value = konfigurator@devega.de
+      #overwrite.cc.value = nirmalya.mondal@gmail.com
+    }
+    sender {
+      enable = 0
+      overwrite.subject = COA
+      overwrite.subject {
+        10 = TEXT
+        10.data = GP:tx_powermail_pi1|field|subject
+      }
+      overwrite.senderName.value = deVega Präsentationsmappen
+      overwrite.senderEmail.value = konfigurator@devega.de
+    }
+    excludeFromPowermailAllMarker {
+      receiverMail {
+        # add some markernames (commaseparated) which should be excluded
+        excludeFromMarkerNames = adminonly, referrer, sex, marker, first_name, last_name, telefon, email, organisation, address, plz, city, country, produkt, comments, druckdateihochladen, druckdateihochladen_01, ichzahlepervorkassemit2skonto   
+        # add some fieldtypes (commaseparated) which should be excluded
+        excludeFromFieldTypes = hidden
+      }
+      senderMail {
+        # add some markernames (commaseparated) which should be excluded
+        excludeFromMarkerNames = adminonly, referrer, sex, marker, first_name, last_name, telefon, email, organisation, address, plz, city, country, produkt, comments, druckdateihochladen, druckdateihochladen_01, ichzahlepervorkassemit2skonto  
+        # add some fieldtypes (commaseparated) which should be excluded
+        excludeFromFieldTypes = hidden
+      }
+    }
+  }
+}
+
+page.cssInline {
+  133 = TEXT
+  133.value (
+    div.border-darker a.text-white,
+    li.text-primary a.bkToAndernStep,
+    #powermail_field_produkt {
+      display:none;
+    }
+    form.powermail_form_2 {
+      padding:5px 0px;
+    }
+    .tab-text-bottom .lead { display:none; }
+  )
+}
+
+page.includeJSFooter.file60 = fileadmin/devega/Resources/Public/JavaScript/powermailUserSet.js
+#Showing Page Loadder on clicking on Profile Update
+page.footerData {
+  543 = TEXT
+  543.value (
+    <link rel="stylesheet" type="text/css" href="{$templateCssPath}/HoldOn.min.css" media="all">
+    <script src="{$templateJsPath}/HoldOn.min.js"></script>
+    <script>
+        jQuery(function(){
+          $('input.powermail_submit').bind("click", function(){
+            if($('#powermail_field_marker_1').is(":checked")) {
+               testHoldon('sk-circle');
+            }
+          });
+          function testHoldon(themeName){
+            HoldOn.open({
+                theme:themeName,
+                message:"<h4 style='opacity:1;filter: alpha(opacity=100);'>Bitte warten Sie einen Moment</h4>"
+            });        
+            setTimeout(function(){
+                HoldOn.close();
+            },10000);
+        }
+        });
+    </script>
+  )
+}
+[END]
+
+[page["uid"] == 189]
+#Danke für Ihre Anfrage! [189]
+[END]
+
+[page["uid"] == 207]
+#Bitte prüfen Sie Ihre Benutzerdaten Sales [207]
+[END]

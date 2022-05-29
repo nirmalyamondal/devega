@@ -1,0 +1,17 @@
+page {	
+	meta {		
+		keywords.data =  levelfield : -1 , keywords , slide		
+		description.data = levelfield : -1 , description , slide		
+		abstract.field = abstract		
+		robots = index, follow	
+		#keywords.field = keywords
+	    #keywords.ifEmpty.data = {$lll}metaKeywords		
+	    description.field = description
+	    description.ifEmpty.data = {$lll}metaDescription		
+	    author.data = {$lll}kundenName
+		publisher.data = {$lll}publisher
+		viewport  = width=device-width, initial-scale=1.0
+		google-site-verification = {$googleSiteVerification}
+		#google-site-verification = "O7QXRpPWkAI2h4ivkeCFcnV3V6m0EqLBJMCRi9-nJQo"
+	}
+}

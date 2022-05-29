@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT>
+        <type>array</type>
+        <el>
+
+            <settings.categories>
+                <TCEforms>
+                    <label>LLL:EXT:ctype_news/Resources/Private/Language/locallang_db.xlf:flexform.news.category</label>
+                    <config>
+                        <type>select</type>
+                        <maxitems>10</maxitems>
+                        <foreign_table>sys_category</foreign_table>
+                        <foreign_table_where>
+                            AND sys_category.sys_language_uid IN (0,-1)
+                            AND (sys_category.parent = 11 OR sys_category.uid = 11)
+                            ORDER BY sys_category.title ASC
+                        </foreign_table_where>
+                        <renderMode>tree</renderMode>
+                        <treeConfig>
+                            <appearance>
+                                <expandAll>1</expandAll>
+                                <showHeader>1</showHeader>
+                                <maxLevels>99</maxLevels>
+                                <width>600</width>
+                            </appearance>
+                            <parentField>parent</parentField>
+                        </treeConfig>
+                    </config>
+                </TCEforms>
+            </settings.categories>
+
+            <!-- Top News -->
+            <settings.topNewsRestriction>
+                <TCEforms>
+                    <label>LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.topNewsRestriction</label>
+                    <config>
+                        <type>select</type>
+                        <renderType>selectSingle</renderType>
+                        <items>
+                            <numIndex index="0" type="array">
+                                <numIndex index="0">LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.no-constraint</numIndex>
+                                <numIndex index="1"></numIndex>
+                            </numIndex>
+                            <numIndex index="1">
+                                <numIndex index="0">LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.topNewsRestriction.1</numIndex>
+                                <numIndex index="1">1</numIndex>
+                            </numIndex>
+                            <numIndex index="2">
+                                <numIndex index="0">LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.topNewsRestriction.2</numIndex>
+                                <numIndex index="1">2</numIndex>
+                            </numIndex>
+                        </items>
+                    </config>
+                </TCEforms>
+            </settings.topNewsRestriction>
+
+            <settings.limit>
+                <TCEforms>
+                    <label>LLL:EXT:ctype_news/Resources/Private/Language/locallang_db.xlf:flexform.news.limit</label>
+                    <config>
+                        <type>input</type>
+                        <eval>int</eval>
+                        <default>3</default>
+                        <range>
+                            <lower>1</lower>
+                            <upper>100</upper>
+                        </range>
+                    </config>
+                </TCEforms>
+            </settings.limit>
+
+        </el>
+    </ROOT>
+</T3DataStructure>

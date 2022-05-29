@@ -1,0 +1,27 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+<div class="user">
+  <div class="userimage">
+    <f:for each="{dce:fal(field:'userimage', contentObject:contentObject)}" as="fileReference">
+      <f:image src="{fileReference.uid}" alt="" treatIdAsReference="1" />
+    </f:for>
+  </div>
+  <div class="clearfix"></div>
+  <div class="contact-name">{field.username}</div>
+  <div class="position">{field.userabteilung}</div>
+  <f:if condition="{field.userabteilungzusatz}">
+    <f:then>
+      <div class="positionmore">{field.userabteilungzusatz}</div>
+    </f:then>
+  </f:if>
+  <div class="phone">{field.userphone}</div>
+  <f:if condition="{field.userhandy}">
+    <f:then>
+      <div class="mobil">{field.userhandy}</div>
+    </f:then>
+  </f:if>   
+  <div class="e-mail"><f:link.typolink parameter="{field.link}">{field.linktext}</f:link.typolink></div>
+  </div>
+</f:section>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT>
+        <type>array</type>
+        <el>
+
+            <settings.headline>
+                <TCEforms>
+                    <label>LLL:EXT:ctype_news/Resources/Private/Language/locallang_db.xlf:flexform.news.header</label>
+                    <config>
+                        <type>text</type>
+                        <rows>1</rows>
+                    </config>
+                </TCEforms>
+            </settings.headline>
+
+            <settings.categories>
+                <TCEforms>
+                    <label>LLL:EXT:ctype_news/Resources/Private/Language/locallang_db.xlf:flexform.news.category</label>
+                    <config>
+                        <type>select</type>
+                        <maxitems>10</maxitems>
+                        <foreign_table>sys_category</foreign_table>
+                        <foreign_table_where>
+                            AND sys_category.sys_language_uid IN (0,-1) AND (sys_category.parent = 28 OR sys_category.uid = 28)
+                            ORDER BY sys_category.title ASC
+                        </foreign_table_where>
+                        <renderMode>tree</renderMode>
+                        <treeConfig>
+                            <appearance>
+                                <expandAll>1</expandAll>
+                                <showHeader>1</showHeader>
+                                <maxLevels>99</maxLevels>
+                                <width>600</width>
+                            </appearance>
+                            <parentField>parent</parentField>
+                        </treeConfig>
+                    </config>
+                </TCEforms>
+            </settings.categories>
+
+            <!-- Archive -->
+            <settings.archiveRestriction>
+                <TCEforms>
+                    <label>
+                        LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.archiveRestriction
+                    </label>
+                    <config>
+                        <type>select</type>
+                        <renderType>selectSingle</renderType>
+                        <items>
+                            <numIndex index="0" type="array">
+                                <numIndex index="0">LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.no-constraint</numIndex>
+                                <numIndex index="1"></numIndex>
+                            </numIndex>
+                            <numIndex index="1">
+                                <numIndex index="0">LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.archiveRestriction.active</numIndex>
+                                <numIndex index="1">active</numIndex>
+                            </numIndex>
+                            <numIndex index="2">
+                                <numIndex index="0">LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.archiveRestriction.archived</numIndex>
+                                <numIndex index="1">archived</numIndex>
+                            </numIndex>
+                        </items>
+                    </config>
+                </TCEforms>
+            </settings.archiveRestriction>
+
+        </el>
+    </ROOT>
+</T3DataStructure>

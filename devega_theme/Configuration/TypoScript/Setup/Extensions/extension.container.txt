@@ -1,0 +1,61 @@
+tt_content.devegatheme-2cols66 < lib.contentElement
+tt_content.devegatheme-2cols66 {
+	templateName = 2Columns66
+	templateRootPaths {
+		10 = {$templateExtensionsPath}/Container/
+	}
+	dataProcessing {
+		100 = B13\Container\DataProcessing\ContainerProcessor
+	}
+}
+tt_content.devegatheme-2cols84 < lib.contentElement
+tt_content.devegatheme-2cols84 {
+	templateName = 2Columns84
+	templateRootPaths {
+		10 = {$templateExtensionsPath}/Container/
+	}
+	dataProcessing {
+		100 = B13\Container\DataProcessing\ContainerProcessor
+	}
+}
+tt_content.devegatheme-2cols84mit < lib.contentElement
+tt_content.devegatheme-2cols84mit {
+	templateName = 2Columns84mit
+	templateRootPaths {
+		10 = {$templateExtensionsPath}/Container/
+	}
+	dataProcessing {
+		100 = B13\Container\DataProcessing\ContainerProcessor
+	}
+}
+tt_content.devegatheme-2cols48 < lib.contentElement
+tt_content.devegatheme-2cols48 {
+	templateName = 2Columns48
+	templateRootPaths {
+		10 = {$templateExtensionsPath}/Container/
+	}
+	dataProcessing {
+		100 = B13\Container\DataProcessing\ContainerProcessor
+	}
+}
+tt_content.devegatheme-3cols < lib.contentElement
+tt_content.devegatheme-3cols {
+	templateName = 3Columns
+	templateRootPaths {
+		10 = {$templateExtensionsPath}/Container/
+	}
+	dataProcessing {
+		100 = B13\Container\DataProcessing\ContainerProcessor
+	}
+}
+
+tt_content.devegatheme-4cols < lib.contentElement
+tt_content.devegatheme-4cols {
+	templateName = 4Columns
+	templateRootPaths {
+		10 = {$templateExtensionsPath}/Container/
+	}
+	dataProcessing {
+		100 = B13\Container\DataProcessing\ContainerProcessor
+	}
+}

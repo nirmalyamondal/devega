@@ -1,0 +1,35 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Settings/settings.additionalSetup.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Settings/settings.config.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Settings/settings.error.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Settings/settings.footerData.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Settings/settings.headerData.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Settings/settings.metaTag.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Settings/settings.multiLanguage.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Settings/settings.page.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Settings/settings.pageIdCondition.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Settings/settings.parseFunc_RTE.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Settings/settings.persistence.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Settings/settings.removingImageAttributes.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Settings/settings.tt_content.txt">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.container">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.devegaprofile.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.felogin.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.htmlminifier.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.pimdevegaproduct.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.powermail.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.srfeuserregister.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.wsflexslider.txt">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Library/lib.abstract.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Library/lib.copyright.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Library/lib.devegaSlogan.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Library/lib.fluidContent.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Library/lib.headerimage.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Library/lib.logo.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Library/lib.menu.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Library/lib.objectsCustom.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Library/lib.records.txt">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Layout/layout.frontend.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Layout/layout.backend.txt">

@@ -1,0 +1,22 @@
+HomepageId  = 1
+FooterpageId = 8
+FooterContentId  = 1
+
+sloganPageId = 156
+
+Spalte1PageId = 160
+Spalte2PageId = 161
+Spalte3PageId = 162
+Spalte4PageId = 163
+
+lll = LLL:typo3conf/ext/devega_theme/Resources/Private/Language/CustomLanguage.xml:
+googleSiteVerification = ekY1O6kYLNQrjNYalFGtAqb63w-MDW18xvWc7whtYYo
+websiteURL = https://www.devega-praesentationsmappen.de/
+
+templateHtmlPath = EXT:devega_theme/Resources/Private
+templateCssPath  = EXT:devega_theme/Resources/Public/Css
+templateJavaScriptPath  = EXT:devega_theme/Resources/Public/JavaScript
+templateImagesPath  = EXT:devega_theme/Resources/Public/Images
+templateIconsPath  = EXT:devega_theme/Resources/Public/Icons
+templateFontsPath  = EXT:devega_theme/Resources/Public/Fonts
+templateExtensionsPath = EXT:devega_theme/Resources/Private/Extensions

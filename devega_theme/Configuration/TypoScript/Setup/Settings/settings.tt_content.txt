@@ -1,0 +1,14 @@
+tt_content.textmedia.dataProcessing.20.maxGalleryWidth = 1920
+tt_content.image.dataProcessing.20.maxGalleryWidth = 1920
+tt_content.textpic.dataProcessing.20.maxGalleryWidth = 1920
+
+tt_content.stdWrap.innerWrap.cObject = CASE
+tt_content.stdWrap.innerWrap.cObject {
+  key.field = layout
+  default = TEXT
+  default.value = |  
+  101 = TEXT
+  101.value = <div class="leistung"><div class="col-lg-6 col-md-6 col-sm-6">|</div></div>  
+  102 = TEXT
+  102.value = <div class="produkte"><div class="col-lg-4 col-md-4 col-sm-6">|</div></div>
+}

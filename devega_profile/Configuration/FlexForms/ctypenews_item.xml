@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT>
+        <type>array</type>
+        <el>
+
+            <settings.categories>
+                <TCEforms>
+                    <label>LLL:EXT:ctype_news/Resources/Private/Language/locallang_db.xlf:flexform.news.category</label>
+                    <displayCond>FIELD:settings.singleNews:REQ:false</displayCond>
+                    <config>
+                        <type>select</type>
+                        <maxitems>10</maxitems>
+                        <foreign_table>sys_category</foreign_table>
+                        <foreign_table_where>
+                            AND sys_category.sys_language_uid IN (0,-1)
+                            AND (sys_category.parent = 11 OR sys_category.uid = 11)
+                            ORDER BY sys_category.title ASC
+                        </foreign_table_where>
+                        <renderMode>tree</renderMode>
+                        <treeConfig>
+                            <appearance>
+                                <expandAll>1</expandAll>
+                                <showHeader>1</showHeader>
+                                <maxLevels>99</maxLevels>
+                                <width>600</width>
+                            </appearance>
+                            <parentField>parent</parentField>
+                        </treeConfig>
+                    </config>
+                </TCEforms>
+            </settings.categories>
+
+            <settings.singleNews>
+                <TCEforms>
+                    <label>LLL:EXT:ctype_news/Resources/Private/Language/locallang_db.xlf:flexform.news.view</label>
+                    <onChange>reload</onChange>
+                    <config>
+                        <type>select</type>
+                        <foreign_table>tx_news_domain_model_news</foreign_table>
+                        <foreign_table_where>
+                            AND tx_news_domain_model_news.sys_language_uid IN (0,-1) ORDER BY tx_news_domain_model_news.datetime ASC
+                        </foreign_table_where>
+                        <allowNonIdValues>1</allowNonIdValues>
+                        <items type="array">
+                            <numIndex index="0" type="array">
+                                <numIndex index="0">LLL:EXT:ctype_news/Resources/Private/Language/locallang_db.xlf:flexform.news.view.current</numIndex>
+                                <numIndex index="1" />
+                            </numIndex>
+                            <numIndex index="1" type="array">
+                                <numIndex index="0"></numIndex>
+                                <numIndex index="1">--div--</numIndex>
+                            </numIndex>
+                        </items>
+                        <minitems>0</minitems>
+                        <maxitems>1</maxitems>
+                    </config>
+                </TCEforms>
+            </settings.singleNews>
+
+            <settings.excludeAlreadyDisplayedNews>
+                <TCEforms>
+                    <label>LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_additional.excludeAlreadyDisplayedNews</label>
+                    <displayCond>FIELD:settings.singleNews:REQ:false</displayCond>
+                    <config>
+                        <type>check</type>
+                    </config>
+                </TCEforms>
+            </settings.excludeAlreadyDisplayedNews>
+
+        </el>
+    </ROOT>
+</T3DataStructure>

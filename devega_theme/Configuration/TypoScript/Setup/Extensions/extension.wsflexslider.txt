@@ -1,0 +1,23 @@
+[page["uid"] == 1]
+plugin.tx_wsflexslider_pi1.settings.maxwidth = 940
+[END]
+
+plugin {
+	tx_wsflexslider_pi1 {
+		view {
+	        templateRootPaths {
+	        	20 = {$templateExtensionPath}/ws_flexslider/Templates/
+	        } 
+	        partialRootPaths {
+	        	20 = {$templateExtensionPath}/ws_flexslider/Partials/
+	        } 
+	        layoutRootPaths {
+	        	20 = {$templateExtensionPath}/ws_flexslider/Layouts/
+	        } 
+	    }
+	    settings {
+			maxwidth = 624
+			includejquerycore = 0    
+	    }
+	}
+}

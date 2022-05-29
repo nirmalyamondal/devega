@@ -1,0 +1,21 @@
+# Assign the Template files with the Fluid Backend-Template
+page.10 {
+  file.stdWrap.cObject = CASE
+  file.stdWrap.cObject {
+    key.data = levelfield:-1, backend_layout_next_level, slide
+    key.override.field = backend_layout
+    # Set the default Template, Inhalt Template
+    default = TEXT
+    default.value = {$templateHtmlPath}/Templates/Inhalt.html
+
+    # Set the first [1] Template, Inhalt Template; ID of Backend Layout
+    1 = TEXT
+    1.value = {$templateHtmlPath}/Templates/Inhalt.html
+    # Set the second [2] Template, Index Template; ID of Backend Layout
+    2 = TEXT
+    2.value = {$templateHtmlPath}/Templates/Index.html
+    # Set the second [3] Template, Page Contact Template; ID of Backend Layout
+    3 = TEXT
+    3.value = {$templateHtmlPath}/Templates/PageContact.html
+  }
+}

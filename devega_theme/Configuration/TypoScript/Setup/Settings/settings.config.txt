@@ -23,7 +23,7 @@ config {
   admPanel = 0
   noPageTitle = 2
   baseURL = {$siteBaseurl}
-  absRelPrefix = {$siteBaseurl}
+  absRefPrefix = {$siteBaseurl}
   typolinkLinkAccessRestrictedPages = 1
   typolinkLinkAccessRestrictedPages_addParams = &redirect=1
   disablePrefixComment = 1
@@ -40,4 +40,5 @@ config {
   fileTarget = _blank
   inlineStyle2TempFile = 1
   xhtml_cleaning = all
+  removePageCss = 0
 }

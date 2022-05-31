@@ -17,7 +17,41 @@ plugin {
 	    }
 	    settings {
 			maxwidth = 624
-			includejquerycore = 0    
+			includejquerycore = 0   
+			maxheight = 
+			animation = fade
+			easing = swing
+			direction = horizontal
+			reverse = false
+			animationLoop = true
+			smoothHeight = false
+			startAt = 0
+			slideshow = true
+			slideshowSpeed = 7000
+			animationSpeed = 600
+			initDelay = 0
+			randomize = false
+			pauseOnAction = true
+			pauseOnHover = false
+			useCSS = true
+			touch = true
+			video = false
+			controlNav = true
+			directionNav = true
+			keyboard = true
+			multipleKeyboard = false
+			mousewheel = false
+			pausePlay = false
+			controlsContainer =
+			manualControls =
+			sync =
+			asNavFor =
+			itemWidth = 0
+			itemMargin = 0
+			minItems = 0
+			maxItems = 0
+			move = 0
+			carousel = false 
 	    }
 	}
 }

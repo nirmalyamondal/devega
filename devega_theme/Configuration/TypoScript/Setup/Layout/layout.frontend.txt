@@ -3,7 +3,7 @@ page.typeNum = 0
 
 #Page Configuration
 page {
-  shortcutIcon = {$templateIconPath}/Icons/favicon-mappen-devega.png
+  shortcutIcon = {$templateIconsPath}/Icons/favicon-mappen-devega.png
   config {
     xmlprologue = none
     #doctype = xhtml_trans
@@ -16,8 +16,6 @@ page {
     #additionalHeaders = P3P: CP="CAO COR CURa ADMa DEVa OUR IND ONL COM DEM PRE"
     doctype(
         <!DOCTYPE html>
-        <!--[if IE 8 ]><html lang="en-EN" class="no-js lt-ie9"> <![endif]-->
-        <!--[if gt IE 8 ]><![endif]-->
      )
   }
 }

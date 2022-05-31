@@ -1,20 +1,20 @@
-page.includeJS {
-  file10 = fileadmin/devega/Resources/Public/JavaScript/jquery-1.12.2.min.js
-  file15 = fileadmin/devega/Resources/Public/JavaScript/bootstrap.min.js
-}
-  
-page.includeJSFooterlibs {
-  file25 = fileadmin/devega/Resources/Public/JavaScript/custom.js
-}
-  
+#remove default JavaScript filees
+page.includeJSFooter.flexslider >
+
 page.includeJSFooter {
-  file60 = https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js
-  zzGoogleAnalyicsFile = https://www.googletagmanager.com/gtag/js?id=UA-139410417-1
-  zzGoogleAnalyicsFile.external = 1
-  zzGoogleAnalyicsFile.async = 1
-  zzzCrazyeggFile = https://script.crazyegg.com/pages/scripts/0092/3848.js
-  zzzCrazyeggFile.external = 1
-  zzzCrazyeggFile.async = 1
+  file1 = {$templateJavaScriptPath}/jquery-1.12.2.min.js
+  file2 = {$templateJavaScriptPath}/bootstrap.min.js
+  file3 = {$templateJavaScriptPath}/ws_flexslider/jquery.flexslider-min.js
+  file4 = https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js
+  file5 = {$templateJavaScriptPath}/cookieconsent2/cookieconsent.min.js
+  file6 = {$templateJavaScriptPath}/cookieconsent2/cookieconsentCustom.js
+  #file7 = {$templateJavaScriptPath}/bootstrap.min.js
+  #file8 = {$templateJavaScriptPath}/bootstrap.min.js
+  #file9 = {$templateJavaScriptPath}/bootstrap.min.js
+  file19 = {$templateJavaScriptPath}/registration.js
+  file20 = {$templateJavaScriptPath}/custom.js
+  file51 = https://www.googletagmanager.com/gtag/js?id=UA-139410417-1
+  file52 = https://script.crazyegg.com/pages/scripts/0092/3848.js
 }
 
 page.jsFooterInline {
@@ -26,38 +26,6 @@ page.jsFooterInline {
   gtag('config', 'UA-139410417-1');
   )
 }
-
-[page["uid"] == 133]
-# Mappenkonfigurator [133]
-page.shortcutIcon = fileadmin/devega/Resources/Public/Icons/favicon-mappen-devega.png
-[END]
-
-[page["uid"] == 155]
-# Ihre Konfiguration ist abgeschlossen [155]
-page.includeJSFooter.file60 = https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js
-[END]
-
-[page["uid"] == 185]
-# Registrierung [185]
-page.includeJSFooter {
-  file60 = https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js
-  zzGoogleAnalyicsFile = https://www.googletagmanager.com/gtag/js?id=UA-139410417-1
-  zzGoogleAnalyicsFile.external = 1
-  zzGoogleAnalyicsFile.async = 1
-  zzzCrazyeggFile = https://script.crazyegg.com/pages/scripts/0092/3848.js
-  zzzCrazyeggFile.external = 1
-  zzzCrazyeggFile.async = 1
-}
-page.jsFooterInline {
-  999 = TEXT
-  999.value (
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-139410417-1');
-  )
-}
-[END]
 
 [page["uid"] == 189]
 # Danke für Ihre Anfrage! [189]
@@ -89,28 +57,6 @@ page.footerData {
     /* ]]> */
     </script>
     <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
-  )
-}
-[END]
-
-[page["uid"] == 207]
-# Bitte prüfen Sie Ihre Benutzerdaten Sales [207]
-page.includeJSFooter{
-  file50 = fileadmin/devega/Resources/Public/JavaScript/registration.js
-  zzGoogleAnalyicsFile = https://www.googletagmanager.com/gtag/js?id=UA-139410417-1
-  zzGoogleAnalyicsFile.external = 1
-  zzGoogleAnalyicsFile.async = 1
-  zzzCrazyeggFile = https://script.crazyegg.com/pages/scripts/0092/3848.js
-  zzzCrazyeggFile.external = 1
-  zzzCrazyeggFile.async = 1
-}
-page.jsFooterInline {
-  999 = TEXT
-  999.value (
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-139410417-1');
   )
 }
 [END]

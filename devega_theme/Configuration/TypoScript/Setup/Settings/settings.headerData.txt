@@ -1,12 +1,21 @@
+#Remove CSS
 page.includeCSS {
-  bootstrap = {$templateCssPath}/bootstrap.min.css
-  style = {$templateCssPath}/style.css
-  menu = {$templateCssPath}/menu.css
-  media = {$templateCssPath}/media.css
+    flexslider >
+    flexslider_mods >
 }
 
-page.headerData.1 = TEXT
-page.headerData.1.value (
+page.headerData.1 = COA
+page.headerData.1  {
+  10 = TEXT 
+  10 {
+    field = subtitle // title
+    wrap = | &nbsp; - &nbsp;
+  }
+  wrap = <title>|</title>
+} 
+
+page.headerData.5 = TEXT
+page.headerData.5.value (
   <style type="text/css">                                  
     @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=f401b770-9fc4-45aa-abc7-0e9932b37c69&fontids=1167025,1488902");
     @font-face{
@@ -20,117 +29,84 @@ page.headerData.1.value (
       src:url("{$templateFontsPath}/1488902/f95f9fc2-ffda-431c-9d6a-2c3668f5b20b.eot?#iefix") format("eot"),url("{$templateFontsPath}/1488902/5b1fbd62-45dc-4433-a7df-a2b24a146411.woff2") format("woff2"),url("{$templateFontsPath}/1488902/050b1948-f226-4d20-a65a-15d8ed031222.woff") format("woff"),url("{$templateFontsPath}/1488902/beb88be6-2a60-46fe-914f-6892b3ae46ce.ttf") format("truetype");
     }
   </style>
-)  
-  
-page.headerData.5 = COA
-page.headerData.5  {
-  10 = TEXT 
-  10 {
-    field = subtitle // title
-    wrap = |&nbsp;-&nbsp;
-  }
-  wrap = <title>|</title>
-} 
-  
-page.headerData.10 = TEXT
-page.headerData.10.value (
-  <style type="text/css">                                  
-    @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=f401b770-9fc4-45aa-abc7-0e9932b37c69&fontids=1167025,1488902");
-    @font-face{
-      font-family:"Adobe Garamond W08";
-      src:url("{$templateFontsPath}/1167025/9b59db8d-790b-448e-901a-83bee80695d7.eot?#iefix");
-      src:url("{$templateFontsPath}/1167025/9b59db8d-790b-448e-901a-83bee80695d7.eot?#iefix") format("eot"),
-        url("{$templateFontsPath}/1167025/794c9044-29a1-4d4e-961e-774f21e86764.woff2") format("woff2"),
-        url("{$templateFontsPath}/1167025/b263ec73-3337-45b9-9e86-933d27164f2c.woff") format("woff"),
-        url("{$templateFontsPath}/1167025/9675cf06-4f76-47fb-97df-9b255507e865.ttf") format("truetype");
-    }
-    @font-face{
-      font-family:"Helvetica Neue LT W01_65 Md";
-      src:url("{$templateFontsPath}/1488902/f95f9fc2-ffda-431c-9d6a-2c3668f5b20b.eot?#iefix");
-      src:url("{$templateFontsPath}/1488902/f95f9fc2-ffda-431c-9d6a-2c3668f5b20b.eot?#iefix") format("eot"),
-        url("{$templateFontsPath}/1488902/5b1fbd62-45dc-4433-a7df-a2b24a146411.woff2") format("woff2"),
-        url("{$templateFontsPathL}/1488902/050b1948-f226-4d20-a65a-15d8ed031222.woff") format("woff"),
-        url("{$templateFontsPath}/1488902/beb88be6-2a60-46fe-914f-6892b3ae46ce.ttf") format("truetype");
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="{$templateCssPath}/bootstrap.min.css" media="all">
+  <link rel="stylesheet" type="text/css" href="{$templateCssPath}/style.css" media="all">
+  <link rel="stylesheet" type="text/css" href="{$templateCssPath}/menu.css" media="all">
+  <link rel="stylesheet" type="text/css" href="{$templateCssPath}/media.css" media="all">
+  <link rel="stylesheet" type="text/css" href="{$templateCssPath}/ws_flexslider/flexslider.css" media="all">
+  <link rel="stylesheet" type="text/css" href="{$templateCssPath}/ws_flexslider/mods.css" media="all">
+  <link rel="stylesheet" type="text/css" href="{$templateCssPath}/cookieconsent2/cookieconsent.min.css" media="all">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" media="all">
+  <link rel="stylesheet" type="text/css" href="{$templateCssPath}/custom.css" media="all">
 )
 
-page.headerData.13 < temp.bild
-page.headerData.13.stdWrap.wrap = <style type="text/css">body{ background: url(|) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }</style>
+page.headerData.10 = TEXT
+page.headerData.10.value (
+)
+
+page.headerData.15 < temp.bild
+page.headerData.15.stdWrap.wrap = <style type="text/css">body{ background: url(|) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }</style>
 
 [page["uid"] == 133]
 #Mappenkonfigurator [133]
-page.includeCSS.8 = https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css
-page.headerData.6 = TEXT
-page.headerData.6.value (
+page.headerData.1 = TEXT
+page.headerData.1.value (
   <title>Mappenkonfigurator   - deVega</title>
 )
 [END]
 
 [page["uid"] == 155]
 #Ihre Konfiguration ist abgeschlossen [155]
-page.headerData.6 = TEXT
-page.headerData.6.value (
+page.headerData.1 = TEXT
+page.headerData.1.value (
   <title>Ihre Konfiguration ist abgeschlossen</title>
 )
-page.includeCSS.60 = https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css
 [END]
 
 [page["uid"] == 185]
 # Registrierung [185]
-page.includeCSS.60 = https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css
-
-page.cssInline {
-  133 = TEXT
-  133.value (
-    #c2095 .bg-light {
-      padding-bottom:40px;
-    }
-  )
-}
-page.headerData.6 = TEXT
-page.headerData.6.value (
+page.headerData.1 = TEXT
+page.headerData.1.value (
   <title>Registrierung</title>
 )
 [END]
 
 [page["uid"] == 187]
 # Bitte prüfen Sie Ihre Benutzerdaten [187]
-page.headerData.6 = TEXT
-page.headerData.6.value (
+page.headerData.1 = TEXT
+page.headerData.1.value (
   <title>Bitte prüfen Sie Ihre Kontaktdaten</title>
 )
 [END]
 
 [page["uid"] == 188]
 # Bestellung abschließen [188]
-page.headerData.6 = TEXT
-page.headerData.6.value (
+page.headerData.1 = TEXT
+page.headerData.1.value (
   <title>Bestellung abschließen</title>
 )
 [END]
 
 [page["uid"] == 189]
 # Danke für Ihre Anfrage! [189] 
-page.headerData.6 = TEXT
-page.headerData.6.value (
+page.headerData.1 = TEXT
+page.headerData.1.value (
   <title>Danke für Ihre Anfrage!</title>
 )
 [END]
 
 [page["uid"] == 191]
 # Danke Fuer Ihre Bestellung [191]
-page.headerData.6 = TEXT
-page.headerData.6.value (
+page.headerData.1 = TEXT
+page.headerData.1.value (
   <title>Danke für Ihre Bestellung</title>
 )
 [END]
 
 [page["uid"] == 207]
 # Bitte prüfen Sie Ihre Benutzerdaten Sales [207] 
-page.headerData.6 = TEXT
-page.headerData.6.value (
+page.headerData.1 = TEXT
+page.headerData.1.value (
   <title>Bitte prüfen Sie Ihre Kontaktdaten Sales</title>
 )
 [END]
-

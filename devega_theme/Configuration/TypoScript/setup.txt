@@ -12,7 +12,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Settings/settings.removingImageAttributes.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Settings/settings.tt_content.txt">
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.container">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.container.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.devegaprofile.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.felogin.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.htmlminifier.txt">

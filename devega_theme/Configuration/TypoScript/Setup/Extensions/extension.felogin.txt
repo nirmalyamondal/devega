@@ -3,7 +3,7 @@
 #+Ext: Login
 plugin.tx_felogin_pi1 {
 	templateFile = fileadmin/devega/Resources/Private/Templates/ext/felogin/FrontendLogin.html
-	feloginBaseURL = {$constants.websiteURL}
+	feloginBaseURL = {$siteBaseurl}
 	redirectPageLogout = 155
 	forgotResetMessageEmailSentMessage_stdWrap.wrap = <div class="div-fgtPwdPost"><h2>Bitte überprüfen Sie Ihr Postfach</h2><p>|</p></div>
 	forgotMessage_stdWrap.wrap = <div><h2>Ihr Passwort wurde geändert</h2><p>Bitte melden Sie sich nun mit Ihrer E-Mail-Adresse und Ihrem neuen Passwort an. Sie können jetzt Ihre Konfiguration abschließen.</p>|</div>

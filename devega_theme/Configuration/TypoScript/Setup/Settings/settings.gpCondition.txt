@@ -2,7 +2,7 @@
 page.headerData.6 = TEXT
 page.headerData.6.value (
 	<title>Neues Passwort erstellen</title>
-	<meta name="google-site-verification" content="{$constants.googleSiteVerification}" />
+	<meta name="google-site-verification" content="{$googleSiteVerification}" />
 )
 [global]
 
@@ -10,7 +10,7 @@ page.headerData.6.value (
 page.headerData.6 = TEXT
 page.headerData.6.value (
 	<title>Bitte überprüfen Sie Ihr Postfach</title>
-	<meta name="google-site-verification" content="{$constants.googleSiteVerification}" />
+	<meta name="google-site-verification" content="{$googleSiteVerification}" />
 )
 [global]
 
@@ -18,6 +18,6 @@ page.headerData.6.value (
 page.headerData.6 = TEXT
 page.headerData.6.value (
 	<title>Passwort ändern</title>
-	<meta name="google-site-verification" content="{$constants.googleSiteVerification}" />
+	<meta name="google-site-verification" content="{$googleSiteVerification}" />
 )
 [global]

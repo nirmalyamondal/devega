@@ -11,12 +11,15 @@ Spalte4PageId = 163
 
 lll = LLL:typo3conf/ext/devega_theme/Resources/Private/Language/CustomLanguage.xml:
 googleSiteVerification = ekY1O6kYLNQrjNYalFGtAqb63w-MDW18xvWc7whtYYo
-websiteURL = https://www.devega-praesentationsmappen.de/
+siteBaseurl = https://www.devega-praesentationsmappen.de/
+siteBaseurl = http://devega.local/
 
-templateHtmlPath = EXT:devega_theme/Resources/Private
-templateCssPath  = EXT:devega_theme/Resources/Public/Css
-templateJavaScriptPath  = EXT:devega_theme/Resources/Public/JavaScript
-templateImagesPath  = EXT:devega_theme/Resources/Public/Images
-templateIconsPath  = EXT:devega_theme/Resources/Public/Icons
-templateFontsPath  = EXT:devega_theme/Resources/Public/Fonts
-templateExtensionsPath = EXT:devega_theme/Resources/Private/Extensions
+templateHtmlPath = typo3conf/ext/devega_theme/Resources/Private
+templateCssPath  = typo3conf/ext/devega_theme/Resources/Public/Css
+templateJavaScriptPath  = typo3conf/ext/devega_theme/Resources/Public/JavaScript
+templateImagesPath  = typo3conf/ext/devega_theme/Resources/Public/Images
+templateIconsPath  = typo3conf/ext/devega_theme/Resources/Public/Icons
+#Font EXT path not working
+#templateFontsPath  = EXT:devega_theme/Resources/Public/Fonts
+templateFontsPath  = typo3conf/ext/devega_theme/Resources/Public/Fonts
+templateExtensionsPath = typo3conf/ext/devega_theme/Resources/Private/Extensions

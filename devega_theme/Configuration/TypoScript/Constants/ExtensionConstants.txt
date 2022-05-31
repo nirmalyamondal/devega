@@ -1,8 +1,8 @@
-HomepageId  = 1
-FooterpageId = 8
+HomePageId  = 1
+FooterPageId = 8
 FooterContentId  = 1
 
-sloganPageId = 156
+SloganPageId = 156
 
 Spalte1PageId = 160
 Spalte2PageId = 161

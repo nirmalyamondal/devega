@@ -1,6 +1,6 @@
 lib.logo = IMAGE
 lib.logo {
-  file = fileadmin/devega/Resources/Public/Images/logo.png
+  file = {$templateImagesPath}/logo.png
   altText.data = {$lll}logoName
   stdWrap.typolink.parameter = 1
   stdWrap.typolink.ATagParams = class="navbar-brand page-scroll"

@@ -9,7 +9,7 @@ special.value = 133,135
     expAll = 1
     NO.wrapItemAndSub = <li>|</li>
     NO.stdWrap.htmlSpecialChars = 1
-  NO.ATagTitle.field = title
+    NO.ATagTitle.field = title
     ACT < .NO
     ACT = 1
     ACT.stdWrap.htmlSpecialChars = 1
@@ -40,7 +40,7 @@ special.value = 133,135
     expAll = 1
     NO.wrapItemAndSub = <li>|</li>
     NO.stdWrap.htmlSpecialChars = 1
-  NO.ATagTitle.field = title
+    NO.ATagTitle.field = title
     ACT < .NO
     ACT = 1
     ACT.stdWrap.htmlSpecialChars = 1
@@ -71,7 +71,7 @@ special.value = 133,135,3
     expAll = 1
     NO.wrapItemAndSub = <li>|</li>
     NO.stdWrap.htmlSpecialChars = 1
-  NO.ATagTitle.field = title
+    NO.ATagTitle.field = title
     ACT < .NO
     ACT = 1
     ACT.stdWrap.htmlSpecialChars = 1
@@ -101,7 +101,7 @@ special.value = 3,4,5,6
     expAll = 1
     NO.wrapItemAndSub = <li>|</li>
     NO.stdWrap.htmlSpecialChars = 1
-  NO.ATagTitle.field = title
+    NO.ATagTitle.field = title
     ACT < .NO
     ACT = 1
     ACT.stdWrap.htmlSpecialChars = 1
@@ -131,7 +131,7 @@ special.value = 7
     expAll = 1
     NO.wrapItemAndSub = <li>|</li>
     NO.stdWrap.htmlSpecialChars = 1
-  NO.ATagTitle.field = title
+    NO.ATagTitle.field = title
     ACT < .NO
     ACT = 1
     ACT.stdWrap.htmlSpecialChars = 1
@@ -149,7 +149,7 @@ special.value = 36
     expAll = 1
     NO.wrapItemAndSub = <li class="facebook">|</li>  || <li class="twitter">|</li>  || <li class="xing">|</li> || <li class="insta">|</li>
     NO.stdWrap.htmlSpecialChars = 1
-  NO.ATagTitle.field = title
+    NO.ATagTitle.field = title
     ACT < .NO
     ACT = 1
     ACT.stdWrap.htmlSpecialChars = 1
@@ -167,7 +167,7 @@ special.value = 30
     expAll = 1
     NO.wrapItemAndSub = |
     NO.stdWrap.htmlSpecialChars = 1
-  NO.ATagTitle.field = title
+    NO.ATagTitle.field = title
     ACT < .NO
     ACT = 1
     ACT.stdWrap.htmlSpecialChars = 1
@@ -178,19 +178,14 @@ special.value = 30
 lib.rootline = HMENU
 lib.rootline {
     special = rootline
-  special.range = 1|-1
- 
-    wrap = <div class="rootline">|</div>
- 
+    special.range = 1|-1 
+    wrap = <div class="rootline">|</div> 
     1 = TMENU
     1.target = _top
     1.NO {
-        stdWrap.htmlSpecialChars = 1
- 
+        stdWrap.htmlSpecialChars = 1 
         # Layout 1: Seite 1 | Seite 2 | Seite 3
-        linkWrap = |<span class="line">&nbsp;&#124;&nbsp;</span>|*||*| |
- 
- 
+        linkWrap = |<span class="line">&nbsp;&#124;&nbsp;</span>|*||*| | 
         doNotLinkIt = |*| 0 |*| 1
     }
 }
@@ -205,7 +200,7 @@ lib.mainMenuUnternehmen {
     expAll = 1
     NO.wrapItemAndSub = <li>|</li>
     NO.stdWrap.htmlSpecialChars = 1
-  NO.ATagTitle.field = title
+    NO.ATagTitle.field = title
     ACT < .NO
     ACT = 1
     ACT.stdWrap.htmlSpecialChars = 1
@@ -236,7 +231,7 @@ special.value = 135
     expAll = 1
     NO.wrapItemAndSub = <li>|</li>
     NO.stdWrap.htmlSpecialChars = 1
-  NO.ATagTitle.field = title
+    NO.ATagTitle.field = title
     ACT < .NO
     ACT = 1
     ACT.stdWrap.htmlSpecialChars = 1
@@ -266,7 +261,7 @@ lib.footerMenu1 {
     expAll = 1
     NO.wrapItemAndSub = <li>|</li>
     NO.stdWrap.htmlSpecialChars = 1
-  NO.ATagTitle.field = title
+    NO.ATagTitle.field = title
     ACT < .NO
     ACT = 1
     ACT.stdWrap.htmlSpecialChars = 1

@@ -28,22 +28,13 @@ lib.contentRight {
   }
 }
 
-#lib.content {
-#  tables = tt_content
-#  select {
-#    pidInList = this
-#    where = deleted = 0 AND hidden = 0 AND colPos = 0
-#    languageField = sys_language_uid
-#  }
-#}
-
 lib.contentFooter = CONTENT
 lib.contentFooter {
   table = tt_content
   select {
     #specify the content uid
-    where = uid = {$footer_content_uid}
-    pidInList = {$footer_content_pageid}
+    where = uid = {$FooterContentId}
+    pidInList = {$FooterPageId}
     #for latest version language field is not required
     languageField = sys_language_uid
   }

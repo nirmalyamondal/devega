@@ -10,11 +10,6 @@ call_user_func(
         $extensionName = \TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase($extKey);
         $pluginSignature = strtolower($extensionName) . '_pi1';
 
-        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-            'WapplerSystems.WsFlexslider',
-            'Pi1',
-            'WS Flexslider'
-        );
 
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('ws_flexslider', 'Configuration/TypoScript',
             'WS Flexslider');

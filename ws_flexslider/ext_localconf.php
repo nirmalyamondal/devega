@@ -3,12 +3,12 @@ if (!defined('TYPO3_MODE')) {
     die ('Access denied.');
 }
 
-
+//'WapplerSystems.WsFlexslider',
 call_user_func(
     function ($extKey) {
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-            'WapplerSystems.WsFlexslider',
+            'WsFlexslider',
             'Pi1',
             [
                 \WapplerSystems\WsFlexslider\Controller\FlexsliderController::class => 'list',

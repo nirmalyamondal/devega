@@ -1,0 +1,5 @@
+TCEFORM.tt_content.layout{
+	addItems {
+		103 = Ruler Before & After
+	}
+}

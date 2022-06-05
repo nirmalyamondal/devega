@@ -20,6 +20,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.powermail.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.srfeuserregister.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.wsflexslider.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Extensions/extension.seo.txt">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Library/lib.abstract.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:devega_theme/Configuration/TypoScript/Setup/Library/lib.copyright.txt">

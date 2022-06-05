@@ -12,3 +12,17 @@ tt_content.stdWrap.innerWrap.cObject {
   102 = TEXT
   102.value = <div class="produkte"><div class="col-lg-4 col-md-4 col-sm-6">|</div></div>
 }
+
+tt_content.stdWrap.innerWrap.cObject = CASE
+tt_content.stdWrap.innerWrap.cObject {
+  #key.field = frame_class
+  #ruler-before-after =< tt_content.stdWrap.innerWrap.cObject.default
+  #ruler-before-after.20.10.value = csc-frame csc-frame-ruler-before-after
+  
+  key.field = layout
+  default = TEXT
+  default.value = |
+
+  103 = TEXT
+  103.value = <div class="ruler-before-after"><hr class="hr-ruler-before"> | <hr class="hr-ruler-after"></div>
+}

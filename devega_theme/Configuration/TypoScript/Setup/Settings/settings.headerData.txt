@@ -29,12 +29,12 @@ page.headerData.5.value (
       src:url("{$templateFontsPath}/1488902/f95f9fc2-ffda-431c-9d6a-2c3668f5b20b.eot?#iefix") format("eot"),url("{$templateFontsPath}/1488902/5b1fbd62-45dc-4433-a7df-a2b24a146411.woff2") format("woff2"),url("{$templateFontsPath}/1488902/050b1948-f226-4d20-a65a-15d8ed031222.woff") format("woff"),url("{$templateFontsPath}/1488902/beb88be6-2a60-46fe-914f-6892b3ae46ce.ttf") format("truetype");
     }
   </style>
+  <link rel="stylesheet" type="text/css" href="{$templateCssPath}/ws_flexslider/flexslider.css" media="all">
+  <link rel="stylesheet" type="text/css" href="{$templateCssPath}/ws_flexslider/mods.css" media="all">
   <link rel="stylesheet" type="text/css" href="{$templateCssPath}/bootstrap.min.css" media="all">
   <link rel="stylesheet" type="text/css" href="{$templateCssPath}/style.css" media="all">
   <link rel="stylesheet" type="text/css" href="{$templateCssPath}/menu.css" media="all">
-  <link rel="stylesheet" type="text/css" href="{$templateCssPath}/media.css" media="all">
-  <link rel="stylesheet" type="text/css" href="{$templateCssPath}/ws_flexslider/flexslider.css" media="all">
-  <link rel="stylesheet" type="text/css" href="{$templateCssPath}/ws_flexslider/mods.css" media="all">
+  <link rel="stylesheet" type="text/css" href="{$templateCssPath}/media.css" media="all">  
   <link rel="stylesheet" type="text/css" href="{$templateCssPath}/cookieconsent2/cookieconsent.min.css" media="all">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" media="all">
   <link rel="stylesheet" type="text/css" href="{$templateCssPath}/custom.css" media="all">

@@ -1,0 +1,17 @@
+plugin.tx_seo {
+  view {
+    templateRootPaths {
+      0 = EXT:seo/Resources/Private/Templates/XmlSitemap
+      10 = EXT:devega_theme/Resources/Private/Extensions/seo/XmlSitemap
+    }
+    partialRootPaths {
+      0 = EXT:seo/Resources/Private/Partials/XmlSitemap
+      10 = EXT:devega_theme/Resources/Private/Extensions/seo/XmlSitemap
+    }
+    layoutRootPaths {
+      0 = EXT:seo/Resources/Private/Layouts/XmlSitemap
+      10 = EXT:devega_theme/Resources/Private/Extensions/seo/XmlSitemap
+    }
+  }
+  config.xslFile = typo3conf/ext/devega_theme/Resources/Public/Extensions/seo/CSS/Sitemap.xsl
+ }
